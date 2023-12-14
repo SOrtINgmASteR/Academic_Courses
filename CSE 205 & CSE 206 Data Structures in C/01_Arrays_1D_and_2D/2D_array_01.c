@@ -30,6 +30,7 @@ int main()
     printf("%d %d %d %d\n", array1[1][0], array1[1][1], array1[1][2], array1[1][3]);
     printf("%d %d %d %d\n", array1[2][0], array1[2][1], array1[2][2], array1[2][3]);
     printf("%d %d %d %d\n", array1[3][0], array1[3][1], array1[3][2], array1[3][3]);
+    
     printf("\nArray 2 : \n");
     printf("%d %d %d %d\n", array2[0][0], array2[0][1], array2[0][2], array2[0][3]);
     printf("%d %d %d %d\n", array2[1][0], array2[1][1], array2[1][2], array2[1][3]);

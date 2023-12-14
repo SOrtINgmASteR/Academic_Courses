@@ -3,6 +3,7 @@
 int main()
 {
     int i, j , array[3][3];
+
     printf("Enter Array Elements : \n");
     for(i = 0; i < 3; i++)
     {
@@ -11,7 +12,6 @@ int main()
             scanf("%d", &array[i][j]);
         }
     }
-
     printf("The Array Elements are : \n");
     for(i = 0; i < 3; i++)
     {
@@ -21,6 +21,5 @@ int main()
         }
         printf("\n");
     }
-
     return 0;
 }
