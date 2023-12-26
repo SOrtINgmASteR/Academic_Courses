@@ -1,6 +1,3 @@
-//Doubly Linked List
-//Name - Noor Mohammed Priom
-//ID - 22101134 
 #include<stdio.h>
 #include<stdlib.h>
 
