@@ -1,6 +1,6 @@
+//Doubly Linked List
 #include<stdio.h>
 #include<stdlib.h>
-
 struct node
 {
     int data;
@@ -29,13 +29,22 @@ void insertion_at_ending(int new_element)
     struct node *new_node = (struct node *) malloc(sizeof(struct node));
     struct node *traverse_node = head;
     new_node->data = new_element;
-    while(traverse_node->next != NULL)
+    if(head == NULL)
     {
-        traverse_node = traverse_node->next;
+        head = new_node;
+        new_node->prev = NULL;
+        new_node->next = NULL;
     }
-    new_node->prev = traverse_node;
-    traverse_node->next = new_node;
-    new_node->next = NULL;
+    else if(head != NULL)
+    {
+        while(traverse_node->next != NULL)
+        {
+            traverse_node = traverse_node->next;
+        }
+        new_node->prev = traverse_node;
+        traverse_node->next = new_node;
+        new_node->next = NULL;
+    }
     list_size++;
 }
 
@@ -43,9 +52,9 @@ void insertion_at_ending(int new_element)
 void insertion_at_any_position(int new_element, int position)
 {
     struct node *new_node = (struct node *) malloc(sizeof(struct node));
-    struct node *traverse_node = head, *previous_node;
-    int traverse_position = 0;
     new_node->data = new_element;
+    struct node *traverse_node = head, *previous_node;
+    int traverse_index = 0;
 
     if(position == 0)
     {
@@ -55,14 +64,14 @@ void insertion_at_any_position(int new_element, int position)
     {
         insertion_at_ending(new_element);
     }
-    else if( position > 0 && position < list_size)
+    else if(position > 0 && position < list_size)
     {
         while(traverse_node->next != NULL)
         {
             previous_node = traverse_node;
             traverse_node = traverse_node->next;
-            traverse_position++;
-            if(traverse_position == position) break;
+            traverse_index++;
+            if(traverse_index == position) break;
         }
         new_node->next = traverse_node;
         traverse_node->prev = new_node;
@@ -75,7 +84,7 @@ void insertion_at_any_position(int new_element, int position)
 //Deletion at Beginning
 void deletion_at_beginning()
 {
-    struct node *first_node, *second_node;
+    struct node *first_node;
     first_node = head;
     head = first_node->next;
     head->prev = NULL;
@@ -98,17 +107,17 @@ void deletion_at_ending()
 }
 
 //Deletion at any Position
-void deletion_at_any_Position(int position)
+void deletion_at_any_Position(int index)
 {
-    if(position == 0)
+    if(index == 0)
     {
         deletion_at_beginning();
     }
-    else if(position == list_size - 1)
+    else if(index == list_size - 1)
     {
         deletion_at_ending();
     }
-    else if(position > 0 && position < list_size - 2)
+    else if(index > 0 && index < list_size - 2)
     {
         struct node *previous_node, *delete_node = head, *next_node;
         int traverse_position = 0;
@@ -118,14 +127,13 @@ void deletion_at_any_Position(int position)
             delete_node = delete_node->next;
             next_node = delete_node->next;
             traverse_position++;
-            if(traverse_position == position) break;
+            if(traverse_position == index) break;
         }
         previous_node->next = next_node;
         next_node->prev = previous_node;
         free(delete_node);
         list_size--;
     }
-
 }
 
 //Print or Traverse Linked List
@@ -149,7 +157,7 @@ void print_linked_list()
 
 int main()
 {
-    int element, position, option;
+    int element, index, option;
     while(1){
         scanf("%d", &option);
         if(option == 0)break;
@@ -168,8 +176,8 @@ int main()
                 printf("Insertion at any Index, Enter Element : ");
                 scanf("%d", &element);
                 printf("Enter Index : ");
-                scanf("%d", &position);
-                insertion_at_any_position(element, position);
+                scanf("%d", &index);
+                insertion_at_any_position(element, index);
                 break;
             case 4:
                 printf("Deletion at Beginnig\n");
@@ -182,8 +190,8 @@ int main()
             case 6:
                 printf("Deletion at any Index\n");
                 printf("Enter Index : ");
-                scanf("%d", &position);
-                deletion_at_any_Position(position);
+                scanf("%d", &index);
+                deletion_at_any_Position(index);
                 break;
             case 7:
                 printf("Print Linked List : ");

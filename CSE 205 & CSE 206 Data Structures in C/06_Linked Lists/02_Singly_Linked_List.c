@@ -1,3 +1,4 @@
+//Singly Linked List
 #include<stdio.h>
 #include<stdlib.h>
 struct node
@@ -5,6 +6,7 @@ struct node
     int data;
     struct node *next;
 };
+
 //Head pointer & Size
 struct node *head = NULL;
 int list_size = 0;
@@ -43,29 +45,27 @@ void insertion_at_ending(int new_element)
 }
 
 //Insertion at Any Position
-void insertion_at_any_position(int new_element, int position)
+void insertion_at_any_position(int new_element, int index)
 {
     //0 based indexing / positioning
     struct node *new_node = (struct node *)malloc(sizeof(struct node));
-    struct node *traverse_node = head;
     new_node->data = new_element;
-    int traverse_position = 0;
-    if(position == 0)
+    struct node *traverse_node = head;
+    int traverse_index = 0;
+    if(index == 0)
     {
         insertion_at_beginning(new_element);
-        list_size++;
     }
-    else if(position == list_size)
+    else if(index == list_size)
     {
         insertion_at_ending(new_element);
-        list_size++;
     }
-    else if(position > 0 && position < list_size)
+    else if(index > 0 && index < list_size)
     {
         while(traverse_node->next != NULL)
         {
-            traverse_position++;
-            if(traverse_position == position) break;
+            traverse_index++;
+            if(traverse_index == index) break;
             traverse_node = traverse_node->next;
         }
         new_node->next = traverse_node->next;
@@ -103,27 +103,27 @@ void deletion_at_ending()
 }
 
 //Deletion at Any Position
-void deletion_at_any_position(int position)
+void deletion_at_any_position(int index)
 {
     //0 based indexing / positioning
     struct node *traverse_node = head, *previous_node;
-    int traverse_position = 0;
-    if(position == 0)
+    int traverse_index = 0;
+    if(index == 0)
     {
         deletion_at_beginning();
     }
-    else if(position == list_size)
+    else if(index == list_size- 1)
     {
         deletion_at_ending();
     }
-    else if(position > 0 && position < list_size)
+    else if(index > 0 && index < list_size - 1)
     {
         while(traverse_node->next != NULL)
         {
             previous_node = traverse_node;
             traverse_node = traverse_node->next;
-            traverse_position++;
-            if(traverse_position == position) break;
+            traverse_index++;
+            if(traverse_index == index) break;
         }
         previous_node->next = traverse_node->next;
         free(traverse_node);
@@ -170,9 +170,25 @@ void print_linked_list()
     }
 }
 
+//Search element
+void search_element(int search_value)
+{
+    struct node *traverse_node = head;
+    int traverse_index = 0;
+    while(traverse_node != NULL)
+    {
+        if(traverse_node->data == search_value)
+        {
+            printf("Inddex : %d\n", traverse_index);
+        }
+        traverse_index++;
+        traverse_node = traverse_node->next;
+    }
+}
+
 int main()
 {
-    int element, position, option;
+    int element, index, option;
     while(1){
         scanf("%d", &option);
         if(option == 0)break;
@@ -191,8 +207,8 @@ int main()
                 printf("Insertion at any Index, Enter Element : ");
                 scanf("%d", &element);
                 printf("Enter Index : ");
-                scanf("%d", &position);
-                insertion_at_any_position(element, position);
+                scanf("%d", &index);
+                insertion_at_any_position(element, index);
                 break;
             case 4:
                 printf("Deletion at Beginnig\n");
@@ -205,8 +221,8 @@ int main()
             case 6:
                 printf("Deletion at any Index\n");
                 printf("Enter Index : ");
-                scanf("%d", &position);
-                deletion_at_any_position(position);
+                scanf("%d", &index);
+                deletion_at_any_position(index);
                 break;
             case 7:
                 printf("Print Linked List : ");
