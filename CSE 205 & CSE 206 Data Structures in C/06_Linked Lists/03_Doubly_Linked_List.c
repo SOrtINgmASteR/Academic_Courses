@@ -158,10 +158,12 @@ void print_linked_list()
 int main()
 {
     int element, index, option;
-    while(1){
+    while(1)
+    {
         scanf("%d", &option);
         if(option == 0)break;
-        switch(option){
+        switch(option)
+        {
             case 1:
                 printf("Insertion at Beginnig, Enter Element : ");
                 scanf("%d", &element);

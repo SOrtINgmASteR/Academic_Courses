@@ -1,4 +1,4 @@
-//Structure Define & Initialization
+//Structure Define & Initialization (Global & Local)
 #include<stdio.h>
 struct mountains
 {

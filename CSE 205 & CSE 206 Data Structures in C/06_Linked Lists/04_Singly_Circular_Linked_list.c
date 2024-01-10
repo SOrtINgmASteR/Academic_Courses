@@ -48,6 +48,37 @@ void insertion_at_ending(int new_element)
     list_size++;
 }
 
+//Deletion at Beginning
+void deletion_at_beginning()
+{
+    struct node *first_node;
+    if(tail == NULL)
+    {
+        printf("There is no elements in the linked List");
+        return;
+    }
+    first_node = tail->next;
+    tail->next = first_node->next;
+    free(first_node);
+    list_size--;
+}
+
+//Deletion at Ending
+void deletion_at_ending()
+{
+    struct node *last_node, *previous_node;
+    last_node = tail->next;
+    do
+    {
+        previous_node = last_node;
+        last_node = last_node->next;
+    } while(last_node != tail);
+    previous_node->next = tail->next;
+    tail = previous_node;
+    free(last_node);
+    list_size--;
+}
+
 //Print or Traverse Linked List
 void print_linked_list()
 {
@@ -69,23 +100,42 @@ void print_linked_list()
 
 int main()
 {
-    insertion_at_beginning(10);
-    insertion_at_beginning(12);
-    insertion_at_beginning(14);
-    insertion_at_beginning(16);
-    print_linked_list();
-    insertion_at_ending(50);
-    insertion_at_ending(52);
-    insertion_at_ending(54);
-    print_linked_list();
-    insertion_at_beginning(41);
-    insertion_at_beginning(42);
-    insertion_at_beginning(43);
-    insertion_at_beginning(44);
-    print_linked_list();
-    insertion_at_ending(75);
-    insertion_at_ending(80);
-    insertion_at_ending(90);
-    print_linked_list();
+    int element, index, option;
+    while(1)
+    {
+        scanf("%d", &option);
+        if(option == 0)break;
+        switch(option)
+        {
+            case 1:
+                printf("Insertion at Beginnig, Enter Element : ");
+                scanf("%d", &element);
+                insertion_at_beginning(element);
+                break;
+            case 2:
+                printf("Insertion at Ending, Enter Element : ");
+                scanf("%d", &element);
+                insertion_at_ending(element);
+                break;
+            case 3:
+                break;
+            case 4:
+                printf("Deletion at Beginnig\n");
+                deletion_at_beginning();
+                break;
+            case 5:
+                printf("Deletion at Ending\n");
+                deletion_at_ending();
+                break;
+            case 6:
+                break;
+            case 7:
+                printf("Print Linked List : ");
+                print_linked_list();
+                break;
+            default :
+                break;
+        }
+    }
     return 0;
 }

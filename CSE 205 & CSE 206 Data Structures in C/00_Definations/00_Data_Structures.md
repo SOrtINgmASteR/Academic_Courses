@@ -28,3 +28,35 @@ Follows the Last In, First Out (LIFO) principle. Operations: Push (insert), Pop 
 
 - **4.Queues**  
 Follows the First In, First Out (FIFO) principle. Operations: Enqueue (insert), Dequeue (delete).  
+
+**5. Trees**  
+Hierarchical structure composed of nodes. *Types:* Binary Tree, Binary Search Tree, AVL Tree, B-tree.  
+
+**6. Graphs**  
+Collection of nodes connected by edges. *Types:* Directed Graph, Undirected Graph, Weighted Graph.  
+
+**7.Hash Tables**  
+Uses a hash function to map keys to indices, allowing fast retrieval. Collision resolution techniques: Separate Chaining, Open Addressing.  
+
+**8.Heaps**  
+Specialized tree-based data structure. *Types:* Min Heap, Max Heap.  
+
+**9.Trie** 
+Tree-like structure used for storing a dynamic set of strings.  
+
+**10.Sets**  
+Collection of distinct elements. Operations: Union, Intersection, Difference.  
+
+**11.Priority queue**
+Similar to queues but allows access to elements based on priority.  
+
+**12.Deque** Double-ended queue that allow insertion and deletion at both ends.  
+
+**13.Disjoint Set** (Union-Find) Used to track a partition of a set into disjoint subsets.  
+
+**14.Bloom Filter** Probabilistic data structure for membership queries.  
+
+**15.Self-Balancing Binary Search Trees** Automatically maintain a balanced structure during insertions and deletions. Examples: AVL Tree, Red-Black Tree.  
+
+**16.Skip List**
+Probabilistic data structure for ordered elements with logarithmic search time.

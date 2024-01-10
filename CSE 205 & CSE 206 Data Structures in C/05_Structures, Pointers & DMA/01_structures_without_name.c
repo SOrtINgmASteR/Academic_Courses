@@ -1,4 +1,4 @@
-//Structure Define & Initialization
+//Structure Define & Initialization (Global Only)
 #include<stdio.h>
 struct
 {
