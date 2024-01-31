@@ -1,4 +1,4 @@
-//Print n to 1 then 1 to n all odd
+//Print from n to 1 then 1 to n all odd
 //7 5 3 1 1 3 5 7
 #include<stdio.h>
 void function(int n)
