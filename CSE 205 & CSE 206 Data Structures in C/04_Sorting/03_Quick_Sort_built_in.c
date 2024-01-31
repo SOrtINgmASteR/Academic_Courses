@@ -16,10 +16,10 @@ int descending(const void *a, const void *b)
 
 int main()
 {
-    int i, n = 8, array[10] = {95, -10, 25, 11, 9, 5, 4, 21};
+    int i, n = 8, array[100] = {95, -10, 25, 11, 9, 5, 4, 21, -6, -6, -6};
     qsort(array, n, sizeof(int), ascending);
     printf("Ascending Order : \n");
-    for(i = 0; i < n; i++)
+    for(i = 0; i < n + 3; i++)
     {
         printf("%d ", array[i]);
     }
@@ -27,7 +27,7 @@ int main()
 
     qsort(array, n, sizeof(int), descending);
     printf("Descending Order : \n");
-    for(i = 0; i < n; i++)
+    for(i = 0; i < n + 3; i++)
     {
         printf("%d ", array[i]);
     }

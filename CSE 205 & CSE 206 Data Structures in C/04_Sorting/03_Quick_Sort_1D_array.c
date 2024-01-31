@@ -36,10 +36,22 @@ void quick_sort(int a[], int low, int high)
 int main()
 {
     int i,  a[10] = {9, 4, 6, 15, 6, 5, 14, 11, -10, -21};
-    quick_sort(a, 0, 9);
-    for(i = 0; i < 10; i++)
+    int n = 10;
+
+    printf("Before Sorting : ");
+    for(i = 0; i < n; i++)
     {
         printf("%d ", a[i]);
     }
+    printf("\n");
+
+    quick_sort(a, 0, 9);
+
+    printf("After Sorting : ");
+    for(i = 0; i < n; i++)
+    {
+        printf("%d ", a[i]);
+    }
+    printf("\n");
     return 0;
 }
