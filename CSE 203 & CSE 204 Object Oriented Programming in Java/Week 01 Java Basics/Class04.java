@@ -1,4 +1,4 @@
-//Floating datatype prescription
+//Floating datatype preciption
 import java.text.DecimalFormat;
 public class Class04 {
     public static void main(String[] args) {
