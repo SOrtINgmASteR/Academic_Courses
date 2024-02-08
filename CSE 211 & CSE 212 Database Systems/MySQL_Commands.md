@@ -6,7 +6,7 @@
 - creating a table - 
 ```
 CREATE TABLE employees(
-	employee_id int,
+    employee_id int,
     first_name varchar(30),
     last_name varchar(30),
     email varchar(30),
@@ -36,7 +36,7 @@ CREATE TABLE students (
 ```
 INSERT INTO students (student_id, first_name, last_name, hometown, cgpa)
 VALUES	(22101134, "Noor Mohammed", "Priom", "Cumilla", 3.30),
-		(22101133, "Mazharul Islam", "Sourav", "Gazipur", 3.30),
+	    (22101133, "Mazharul Islam", "Sourav", "Gazipur", 3.30),
         (22101132, "Faisal", "Hossain", "Barisal", 3.30),
         (22101128, "Sharif Md.", "Yousuf", "Cumilla", 3.30),
         (22101104, "Raier Rahman", "Ovi", "Noakhali", 3.30);
