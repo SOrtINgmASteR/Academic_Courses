@@ -35,14 +35,14 @@ CREATE TABLE students (
 - inserting rows in table - 
 ```
 INSERT INTO employees(employee_id, first_name, last_name, email, phone_number, hiring_date, salary, comission, manager_id, department_id)
-VALUES	(201, "Sharif Md.", "Yousuf", "22101128@uap-bd.edu", "01312345628", '25-28-2012', 25000, 2, 4001, 3), 
-		(202, "Faisal", "Hossain", "22101132@uap-bd.edu", "01312345632", '25-28-2010', 30000, 3, 4002, 3),
-        (203, "Raier Rahman", "Ovi", "22101104@uap-bd.edu", "01312345604", '25-28-2011', 30000, 2, 4001, 4),
-        (204, "MD Tausif", "Uddin", "22101112@uap-bd.edu", "01312345612", '25-28-2007', 30000, 4, 4001, 4),
-        (205, "Maxharul Islam", "Sourav", "22101133@uap-bd.edu", "01312345633", '25-28-2001', 35000, 2, 4002, 2),
-        (206, "Ahsan", "Sourav", "22101123@uap-bd.edu", "01312345623", '25-28-2003', 35000, 3, 4002, 2),
-        (207, "Bokhtear Md.", "Abid", "22101124@uap-bd.edu", "01312345624", '25-28-2007', 25000, 2, 4002, 3),
-        (208, "Mostafezur Rahman", "Mesbah", "22101126@uap-bd.edu", "01312345623", '25-28-2008', 25000, 3, 4001, 1);
+VALUES(201, "Sharif Md.", "Yousuf", "22101128@uap-bd.edu", "01312345628", '25-28-2012', 25000, 2, 4001, 3), 
+	  (202, "Faisal", "Hossain", "22101132@uap-bd.edu", "01312345632", '25-28-2010', 30000, 3, 4002, 3),
+      (203, "Raier Rahman", "Ovi", "22101104@uap-bd.edu", "01312345604", '25-28-2011', 30000, 2, 4001, 4),
+      (204, "MD Tausif", "Uddin", "22101112@uap-bd.edu", "01312345612", '25-28-2007', 30000, 4, 4001, 4),
+      (205, "Maxharul Islam", "Sourav", "22101133@uap-bd.edu", "01312345633", '25-28-2001', 35000, 2, 4002, 2),
+      (206, "Ahsan", "Sourav", "22101123@uap-bd.edu", "01312345623", '25-28-2003', 35000, 3, 4002, 2),
+      (207, "Bokhtear Md.", "Abid", "22101124@uap-bd.edu", "01312345624", '25-28-2007', 25000, 2, 4002, 3),
+      (208, "Mostafezur Rahman", "Mesbah", "22101126@uap-bd.edu", "01312345623", '25-28-2008', 25000, 3, 4001, 1);
 ```
 ```
 INSERT INTO students (student_id, first_name, last_name, hometown, cgpa)
