@@ -46,4 +46,4 @@ VALUES	(22101134, "Noor Mohammed", "Priom", "Cumilla", 3.30),
 - showing particular attributes from a table - `SELECT attribute_1, attribute_2 FROM <table_name>;`  
 - changing the name of an attribute - `SELECT attribute_1 "Registration ID", attribute_2 "Final Result" FROM <table_name>;`  
 - arithmatics operations for some attribute - `SELECT ((attribute_1 - 500) * 12) "Registration ID", attribute_2 "Final Result" FROM <table_name>;`
-- concatination of attribute - 
+- concatination of attribute - `SELECT CONCAT(first_name, " " ,last_name) "Full Name", other_attribute FROM <table_name>;`  
