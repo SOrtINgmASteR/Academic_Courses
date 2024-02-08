@@ -35,11 +35,11 @@ CREATE TABLE students (
 - inserting rows in table - 
 ```
 INSERT INTO students (student_id, first_name, last_name, hometown, cgpa)
-VALUES	(22101134, "Noor Mohammed", "Priom", "Cumilla", 3.30),
-	    (22101133, "Mazharul Islam", "Sourav", "Gazipur", 3.30),
-        (22101132, "Faisal", "Hossain", "Barisal", 3.30),
-        (22101128, "Sharif Md.", "Yousuf", "Cumilla", 3.30),
-        (22101104, "Raier Rahman", "Ovi", "Noakhali", 3.30);
+VALUES(22101134, "Noor Mohammed", "Priom", "Cumilla", 3.30), 
+      (22101133, "Mazharul Islam", "Sourav", "Gazipur", 3.30),
+      (22101132, "Faisal", "Hossain", "Barisal", 3.30),
+      (22101128, "Sharif Md.", "Yousuf", "Cumilla", 3.30),
+      (22101104, "Raier Rahman", "Ovi", "Noakhali", 3.30);
 ```  
 
 - showing all attributes from a table - `SELECT * FROM <table_name>;`  
