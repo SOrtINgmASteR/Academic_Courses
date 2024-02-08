@@ -35,8 +35,8 @@ CREATE TABLE students (
 - inserting rows in table - 
 ```
 INSERT INTO employees(employee_id, first_name, last_name, email, phone_number, hiring_date, salary, comission, manager_id, department_id)
-VALUES (201, "Sharif Md.", "Yousuf", "22101128@uap-bd.edu", "01312345628", '2012-08-25', 25000, 2, 4001, 3), 
-	   (202, "Faisal", "Hossain", "22101132@uap-bd.edu", "01312345632", '2008-02-01', 30000, 3, 4002, 3),
+VALUES (201, "Sharif Md.", "Yousuf", "22101128@uap-bd.edu", "01312345628", '2012-08-25', 25000, 2, 4001, 3),
+       (202, "Faisal", "Hossain", "22101132@uap-bd.edu", "01312345632", '2008-02-01', 30000, 3, 4002, 3),
        (203, "Raier Rahman", "Ovi", "22101104@uap-bd.edu", "01312345604", '2007-08-25', 30000, 2, 4001, 4),
        (204, "MD Tausif", "Uddin", "22101112@uap-bd.edu", "01312345612", '2009-02-21', 30000, 4, 4001, 4),
        (205, "Maxharul Islam", "Sourav", "22101133@uap-bd.edu", "01312345633", '2003-02-11', 35000, 2, 4002, 2),
