@@ -2,7 +2,7 @@
 - creating databases - `CREATE DATABASE <database_name>;`  
 - droping databases - `DROP DATABASE <database_name>;`  
 - using a particular databases - `USE <database_name>;`  
-- checking which database is in use - `SELECT dayabase();`   
+- checking which database is in use - `SELECT database();`   
 - creating a table - 
 ```
 CREATE TABLE employees(
@@ -39,7 +39,7 @@ VALUES (201, "Sharif Md.", "Yousuf", "22101128@uap-bd.edu", "01312345628", '2012
        (202, "Faisal", "Hossain", "22101132@uap-bd.edu", "01312345632", '2008-02-01', 30000, 3, 4002, 3),
        (203, "Raier Rahman", "Ovi", "22101104@uap-bd.edu", "01312345604", '2007-08-25', 30000, 2, 4001, 4),
        (204, "MD Tausif", "Uddin", "22101112@uap-bd.edu", "01312345612", '2009-02-21', 30000, 4, 4001, 4),
-       (205, "Maxharul Islam", "Sourav", "22101133@uap-bd.edu", "01312345633", '2003-02-11', 35000, 2, 4002, 2),
+       (205, "Mazharul Islam", "Sourav", "22101133@uap-bd.edu", "01312345633", '2003-02-11', 35000, 2, 4002, 2),
        (206, "Ahsan", "Sourav", "22101123@uap-bd.edu", "01312345623", '2002-08-23', 35000, 3, 4002, 2),
        (207, "Bokhtear Md.", "Abid", "22101124@uap-bd.edu", "01312345624", '2012-08-15', 25000, 2, 4002, 3),
        (208, "Mostafezur Rahman", "Mesbah", "22101126@uap-bd.edu", "01312345623", '2012-02-02', 25000, 3, 4001, 1);  
