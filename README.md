@@ -1,4 +1,5 @@
 ## List of Academic courses - 
-- Object Oriented Programming : Java (CSE 203 & CSE 204)
-- Data Structures in C (CSE 205 & CSE 206)  
-- Database System (CSE 211 & CSE 212)
+1. Object Oriented Programming : Java (CSE 203 & CSE 204)
+1. Data Structures in C (CSE 205 & CSE 206)  
+2. Algorithm in C (CSE 207 & CSE 208)  
+3. Database System (CSE 211 & CSE 212)
