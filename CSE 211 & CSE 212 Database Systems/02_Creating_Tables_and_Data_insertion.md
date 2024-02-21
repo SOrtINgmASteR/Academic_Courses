@@ -60,7 +60,7 @@ VALUES	(22101138, "Shanjida Islam", "Female", "CSE", '2022-03-03', 85000.00, 50,
         (22101149, "Nafisha Ali", "Female", "CSE", '2022-05-05', 85000.00, 50, 3.88, "Shahid"),
         (22101146, "Sarmin Akter Saba", "Female", "CSE", '2022-03-03', 85000.00, 50, 3.89, "Shahid");
 ```
-
+```
 INSERT INTO employees(employee_id, first_name, last_name, email, phone_number, hiring_date, salary, comission, manager_id, department_id)
 VALUES (201, "Sharif Md.", "Yousuf", "22101128@uap-bd.edu", "01312345628", '2012-08-25', 25000, 2, 4001, 3),
        (202, "Faisal", "Hossain", "22101132@uap-bd.edu", "01312345632", '2008-02-01', 30000, 3, 4002, 3),
