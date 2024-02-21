@@ -1,7 +1,7 @@
 - Creating a Table  
 ```
 CREATE TABLE students(
-	id int,  
+    id int,  
     student_name varchar(50),  
     gender varchar(10),  
     dept_name varchar(20),  
