@@ -29,6 +29,10 @@ CREATE TABLE employees(
     PRIMARY KEY (employee_id)
 );
 ```
+## Table Information
+- showing all the tables - `SHOW TABLES;`  
+- showing the structure of the table - `SHOW COLUMNS FROM <table_name>;`  or `DESC <table_name>;`  
+- droping a table - `DROP TABLE <table_name>;` 
 
 ## Inserting Data
 ```
