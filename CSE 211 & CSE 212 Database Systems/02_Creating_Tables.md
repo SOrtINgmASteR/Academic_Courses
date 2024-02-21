@@ -17,10 +17,10 @@ CREATE TABLE students(
 - Inserting Data
 ```
 INSERT INTO students(id, student_name, gender, dept_name, admission_date, fees, waiver, gpa, advisor_name)
-VALUES	(22101128, "Sharif Md. Yousuf", "Male", "CSE", '2022-04-04', 85000.00, 50, 3.83, "Shahid"),
-		(22101126, "Mostafezur Rahman", "Male", "CSE", '2022-03-03', 85000.00, 25, 3.35, "Shahid"),
-		(22101124, "Bokhtear Md. Abid", "Male", "CSE", '2022-03-03', 85000.00, 25, 3.36, "Shahid"),
-		(22101123, "Ahsan Habib", "Male", "CSE", '2022-03-03', 85000.00, 25, 3.37, "Shahid"),
+VALUES  (22101128, "Sharif Md. Yousuf", "Male", "CSE", '2022-04-04', 85000.00, 50, 3.83, "Shahid"),
+	    (22101126, "Mostafezur Rahman", "Male", "CSE", '2022-03-03', 85000.00, 25, 3.35, "Shahid"),
+	    (22101124, "Bokhtear Md. Abid", "Male", "CSE", '2022-03-03', 85000.00, 25, 3.36, "Shahid"),
+	    (22101123, "Ahsan Habib", "Male", "CSE", '2022-03-03', 85000.00, 25, 3.37, "Shahid"),
         (22101132, "Faisal Hossain", "Male", "CSE", '2022-04-04', 85000.00, 50, 3.50, "Shahid"),
         (22101133, "Mazharul Islam", "Male", "CSE", '2022-04-04', 85000.00, 50, 3.51, "Shahid"),
         (22101134, "Noor Mohammed Priom", "Male", "CSE", '2022-05-05', 85000.00, 50, 3.52, "Shahid"),
@@ -35,7 +35,7 @@ VALUES	(22101128, "Sharif Md. Yousuf", "Male", "CSE", '2022-04-04', 85000.00, 50
 ```
 INSERT INTO students(id, student_name, gender, dept_name, admission_date, fees, waiver, gpa, advisor_name)
 VALUES	(22101138, "Shanjida Islam", "Female", "CSE", '2022-03-03', 85000.00, 50, 3.75, "Shahid"),
-		(22101111, "Mahmuda Afrin", "Female", "CSE", '2022-03-03', 85000.00, 50, 3.73, "Shahid"),
+        (22101111, "Mahmuda Afrin", "Female", "CSE", '2022-03-03', 85000.00, 50, 3.73, "Shahid"),
         (22101113, "Wasiu Jahan", "Female", "CSE", '2022-03-03', 85000.00, 75, 3.71, "Shahid"),
         (22101115, "Farzana Hossain", "Female", "CSE", '2022-04-04', 85000.00, 75, 3.90, "Shahid"),
         (22101118, "Kashfia Meherin", "Female", "CSE", '2022-04-04', 85000.00, 75, 3.72, "Shahid"),
