@@ -1,16 +1,16 @@
 - Creating a Table  
 ```
 CREATE TABLE students(
-	id int, 
-	student_name varchar(50),
-	gender varchar(10),
-	dept_name varchar(20),
-    admission_date date,
-	fees decimal(8,2),
-    waiver int,
-    gpa double(3, 2),
-    advisor_name varchar(20),
-	primary key (id)
+	id int,  
+    student_name varchar(50),  
+    gender varchar(10),  
+    dept_name varchar(20),  
+    admission_date date,  
+    fees decimal(8,2),  
+    waiver int,  
+    gpa double(3, 2),  
+    advisor_name varchar(20),  
+    primary key (id)
 );
 ```
 
@@ -20,9 +20,9 @@ INSERT INTO students(id, student_name, gender, dept_name, admission_date, fees, 
 VALUES  (22101128, "Sharif Md. Yousuf", "Male", "CSE", '2022-04-04', 85000.00, 50, 3.83, "Shahid"),
         (22101126, "Mostafezur Rahman", "Male", "CSE", '2022-03-03', 85000.00, 25, 3.35, "Shahid"),
         (22101124, "Bokhtear Md. Abid", "Male", "CSE", '2022-03-03', 85000.00, 25, 3.36, "Shahid"),
-	    (22101123, "Ahsan Habib", "Male", "CSE", '2022-03-03', 85000.00, 25, 3.37, "Shahid"),
+        (22101123, "Ahsan Habib", "Male", "CSE", '2022-03-03', 85000.00, 25, 3.37, "Shahid"),
         (22101132, "Faisal Hossain", "Male", "CSE", '2022-04-04', 85000.00, 50, 3.50, "Shahid"),
-        (22101133, "Mazharul Islam", "Male", "CSE", '2022-04-04', 85000.00, 50, 3.51, "Shahid"),
+        (22101133, "Mazharul Islam", "Male", "CSE", '2022-04-04', 85000.00, 50, 3.51, "Shahid"), 
         (22101134, "Noor Mohammed Priom", "Male", "CSE", '2022-05-05', 85000.00, 50, 3.52, "Shahid"),
         (22101112, "Md Tausif Uddin", "Male", "CSE", '2022-05-05', 85000.00, 50, 3.53, "Shahid"),
         (22101104, "Raier Rahman Ove", "Male", "CSE", '2022-05-05', 85000.00, 75, 3.80, "Shahid"),
