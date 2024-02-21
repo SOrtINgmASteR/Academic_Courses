@@ -62,6 +62,7 @@ VALUES	(22101138, "Shanjida Islam", "Female", "CSE", '2022-03-03', 85000.00, 50,
         (22101122, "Mahia Akter", "Female", "CSE", '2022-05-05', 85000.00, 50, 3.86, "Shahid"),
         (22101107, "Nafisa Akter", "Female", "CSE", '2022-05-05', 85000.00, 50, 3.87, "Shahid"),
         (22101149, "Nafisha Ali", "Female", "CSE", '2022-05-05', 85000.00, 50, 3.88, "Shahid"),
+        (22101131, "Nusaiba Binte Amin", "Female", "CSE", '2022-03-03', 85000.00, 50, 3.65, "Shahid"),
         (22101146, "Sarmin Akter Saba", "Female", "CSE", '2022-03-03', 85000.00, 50, 3.89, "Shahid");
 ```
 ```
