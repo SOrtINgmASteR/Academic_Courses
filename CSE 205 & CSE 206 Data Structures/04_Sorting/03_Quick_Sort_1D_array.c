@@ -27,11 +27,13 @@ int partition(int a[], int low, int high)
 }
 void quick_sort(int a[], int low, int high)
 {
-    if(low >= high) return;
-    int pivot_index;
-    pivot_index = partition(a, low, high);
-    quick_sort(a, low, pivot_index - 1);
-    quick_sort(a, pivot_index + 1, high);
+    if(low < high)
+    {
+        int pivot_index;
+        pivot_index = partition(a, low, high);
+        quick_sort(a, low, pivot_index - 1);
+        quick_sort(a, pivot_index + 1, high);
+    }
 }
 int main()
 {

@@ -2,11 +2,11 @@
 //Time Complexity ==> O(nlog(n))
 //Space Complexity ==> O(log n)
 #include<stdio.h>
-void merge(int a[], int l, int mid, int h)
+void merge(int a[], int left, int mid, int right)
 {
     int array[100000];
-    int i = l, j = mid + 1, k = 0;
-    while(i <= mid && j <= h)
+    int i = left, j = mid + 1, k = 0;
+    while(i <= mid && j <= right)
     {
         if(a[i] < a[j])
         {
@@ -21,31 +21,33 @@ void merge(int a[], int l, int mid, int h)
             j++;
         }
     }
-    for( ;i <= mid; i++)
+    while(i <= mid)
     {
         array[k] = a[i];
         k++;
+        i++;
     }
-    for(  ;j <= h; j++)
+    while(j <= right)
     {
         array[k] = a[j];
         k++;
+        j++;
     }
-    for(i = l, j = 0; i <= h; i++, j++)
+    for(i = left, j = 0; i <= right; i++, j++)
     {
         a[i] = array[j];
     }
 }
 
-void mergeSort(int a[], int l, int h)
+void mergeSort(int a[], int left, int right)
 {
     int mid;
-    if(l < h)
+    if(left < right)
     {
-        mid = (l + h) / 2;
-        mergeSort(a, l, mid);
-        mergeSort(a, mid + 1, h);
-        merge(a, l, mid, h);
+        mid = (left + right) / 2;
+        mergeSort(a, left, mid);
+        mergeSort(a, mid + 1, right);
+        merge(a, left, mid, right);
     }
 }
 
