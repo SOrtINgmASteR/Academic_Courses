@@ -1,6 +1,7 @@
 //Scanner class
 import java.text.DecimalFormat;
 import java.util.Scanner;
+
 public class Class05 {
     public static void main(String[] args){
         //ClassName objectName = new ClassName(if parameter);

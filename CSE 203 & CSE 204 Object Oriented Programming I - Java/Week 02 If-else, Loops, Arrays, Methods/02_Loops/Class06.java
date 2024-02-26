@@ -1,6 +1,6 @@
 //Factorial with Loops
 import java.util.Scanner;
-public class Loops06 {
+public class Class06 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int i, number;

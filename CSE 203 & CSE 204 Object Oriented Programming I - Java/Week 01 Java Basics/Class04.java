@@ -1,5 +1,6 @@
 //Floating datatype precision
 import java.text.DecimalFormat;
+
 public class Class04 {
     public static void main(String[] args) {
         DecimalFormat point = new DecimalFormat("0.000");

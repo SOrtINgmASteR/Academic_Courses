@@ -1,6 +1,6 @@
 //Fibonacci with Loops
 import java.util.Scanner;
-public class Loops05 {
+public class Class05 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int i, n, firstTerm = 0, secondTerm = 1, thirdTerm;

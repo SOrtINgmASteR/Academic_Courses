@@ -1,15 +1,16 @@
-//Digit Count
+//Digit Sum
 import java.util.Scanner;
-public class Loops03 {
+public class Class01 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int number, count = 0;
+        int number, digitSum = 0, lastDigit;
         System.out.print("Enter Number : ");
         number = input.nextInt();
         while(number != 0){
+            lastDigit = number % 10;
+            digitSum += lastDigit;
             number /= 10;
-            count++;
         }
-        System.out.println("The number has "+count+" digits");
+        System.out.println("Digit Sum  : "+ digitSum);
     }
 }

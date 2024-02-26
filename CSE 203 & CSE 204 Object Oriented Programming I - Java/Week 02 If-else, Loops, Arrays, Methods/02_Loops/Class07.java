@@ -1,6 +1,6 @@
 //Prime Divisors using Loops
 import java.util.Scanner;
-public class Loops07 {
+public class Class07 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int number, i;

@@ -1,6 +1,6 @@
 //Number Reverse
 import java.util.Scanner;
-public class Loops02 {
+public class Class03 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int number, reverseNumber = 0, lastDigit;
