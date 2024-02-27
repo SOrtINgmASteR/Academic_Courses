@@ -1,17 +1,22 @@
 public class Pokemon {
-    int power;
+    static String x = "UAP";
+    int pokemonPower;
     String pokemonName;
-    public Pokemon(int p, String n){
-        power = p;
-        pokemonName = n;
-    }
+    int pokemonAttackNumber;
     public Pokemon(){
 
+    }
+    public Pokemon(int p, String s, int n){
+        pokemonPower = p;
+        pokemonName = s;
+        pokemonAttackNumber = n;
     }
     public void attack(){
         System.out.println("Attack!!");
     }
-    public void printPower(){
-        System.out.println("Pokemon Power : " + power);
+    public void printDetails(){
+        System.out.println("Pokemon Name : " + pokemonName);
+        System.out.println("Pokemon Attack Number : " + pokemonAttackNumber);
+        System.out.println("Pokemon Power : " + pokemonPower);
     }
 }
