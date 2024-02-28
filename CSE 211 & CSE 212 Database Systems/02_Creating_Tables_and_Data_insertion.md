@@ -99,3 +99,42 @@ VALUES (201, "Sharif Md.", "Yousuf", "22101128@uap-bd.edu", "01312345628", '2012
        (207, "Bokhtear Md.", "Abid", "22101124@uap-bd.edu", "01312345624", '2012-08-15', 25000, 2, 4002, 3),
        (208, "Mostafezur Rahman", "Mesbah", "22101126@uap-bd.edu", "01312345623", '2012-02-02', 25000, 3, 4001, 1);  
 ```
+
+```
+INSERT INTO city (city_id, city_name)
+VALUES	(1, "Dhaka"),
+		(2, "Chittagong"),
+        (3, "Narayongonj"),
+        (4, "Comilla"),
+        (5, "Khulna"),
+        (6, "Barishal"),
+        (7, "Syleth"),
+        (8, "Rangpur");
+
+INSERT INTO course (course_id, course_name)
+VALUES	(101, "Data Structure"),
+		(102, "Algorithm"),
+        (103, "Object Oriented Programming"),
+        (104, "Database"),
+        (105, "DLSD"),
+        (106, "Operating System"),
+        (201, "Physics"),
+        (202, "Math"),
+        (203, "Chemistry");
+
+INSERT INTO student (student_id, student_name, age, courses, city)
+VALUES	(1101, "Sharif Md. Yousuf", 21, 201, 4),
+		(1102, "Mazharul Islam Sourav", 22, 202, 1),
+        (1103, "Faisal Hossain", 20, 101, 6),
+        (1104, "Noor Mohammed Priom", 21, 102, 4),
+        (1105, "Nusaiba Binte Amin", 22, 103, 1),
+        (1106, "Shanjida Islam", 20, 103, 4),
+        (1107, "Sarmin Akter Saba", 23, 203, 2),
+        (1108, "Shornali Akter", 24, 105, 5),
+        (1109, "Nafisa Ali", 19, 106, 3),
+        (1110, "Sadman Sakib", 24, 105, 8),
+        (1111, "Md. Mukit Hasan", 22, 202, 8),
+        (1112, "Md. Raier Rahman Ove", 25, 104, 7),
+        (1113, "Md. Mahfujur Rahman Shuvo", 26, 104, 7);
+
+```
