@@ -33,7 +33,7 @@ CREATE TABLE employees(
 ### Tables with Foreign Keys
 ```
 CREATE TABLE city(
-	city_id int,
+    city_id int,
     city_name varchar(50),
     PRIMARY KEY(city_id)
 );
