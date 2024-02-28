@@ -49,12 +49,7 @@ VALUES  (22101128, "Sharif Md. Yousuf", "Male", "CSE", '2022-04-04', 85000.00, 5
         (22101103, "Mukit Hasan", "Male", "CSE", '2022-04-04', 85000.00, 75, 3.81, "Shahid"),
         (22101105, "Nafiun Yesin Bijoy", "Male", "CSE", '2022-04-04', 85000.00, 75, 3.82, "Shahid"),
         (22101106, "Sadman Sakib", "Male", "CSE", '2022-04-04', 85000.00, 75, 3.84, "Shahid"),
-        (22101150, "Rafiullah Al Naim", "Male", "CSE", '2022-03-03', 85000.00, 50, 3.70, "Shahid");
-```
-
-```
-INSERT INTO students(id, student_name, gender, dept_name, admission_date, fees, waiver, gpa, advisor_name)
-VALUES	(22101138, "Shanjida Islam", "Female", "CSE", '2022-03-03', 85000.00, 50, 3.75, "Shahid"),
+        (22101150, "Rafiullah Al Naim", "Male", "CSE", '2022-03-03', 85000.00, 50, 3.70, "Shahid"),	(22101138, "Shanjida Islam", "Female", "CSE", '2022-03-03', 85000.00, 50, 3.75, "Shahid"),
         (22101111, "Mahmuda Afrin", "Female", "CSE", '2022-03-03', 85000.00, 50, 3.73, "Shahid"),
         (22101113, "Wasiu Jahan", "Female", "CSE", '2022-03-03', 85000.00, 75, 3.71, "Shahid"),
         (22101115, "Farzana Hossain", "Female", "CSE", '2022-04-04', 85000.00, 75, 3.90, "Shahid"),
