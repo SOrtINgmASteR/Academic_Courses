@@ -100,6 +100,7 @@ VALUES (201, "Sharif Md.", "Yousuf", "22101128@uap-bd.edu", "01312345628", '2012
        (208, "Mostafezur Rahman", "Mesbah", "22101126@uap-bd.edu", "01312345623", '2012-02-02', 25000, 3, 4001, 1);  
 ```
 
+#### Foreign key table data
 ```
 INSERT INTO city (city_id, city_name)
 VALUES	(1, "Dhaka"),
