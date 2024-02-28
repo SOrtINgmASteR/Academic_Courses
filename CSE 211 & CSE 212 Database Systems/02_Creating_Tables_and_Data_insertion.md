@@ -29,6 +29,33 @@ CREATE TABLE employees(
     PRIMARY KEY (employee_id)
 );
 ```
+
+### Tables with Foreign Keys
+```
+CREATE TABLE city(
+	city_id int,
+	city_name varchar(50),
+    PRIMARY KEY(city_id)
+);
+
+CREATE TABLE course(
+	course_id int,
+	course_name varchar(50),
+    PRIMARY KEY(course_id)
+);
+
+CREATE TABLE student(
+	student_id int,
+	student_name varchar(50),
+    age int,
+    courses int,
+    city int,
+    PRIMARY KEY(student_id),
+    FOREIGN KEY(city) REFERENCES city(city_id), 
+    FOREIGN KEY(courses) REFERENCES course(course_id)
+);
+```
+
 ## Table Information
 - showing all the tables - `SHOW TABLES;`  
 - showing the structure of the table - `SHOW COLUMNS FROM <table_name>;`  or `DESC <table_name>;`  
