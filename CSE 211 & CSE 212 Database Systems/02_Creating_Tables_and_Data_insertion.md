@@ -34,19 +34,19 @@ CREATE TABLE employees(
 ```
 CREATE TABLE city(
 	city_id int,
-	city_name varchar(50),
+    city_name varchar(50),
     PRIMARY KEY(city_id)
 );
 
 CREATE TABLE course(
-	course_id int,
-	course_name varchar(50),
+    course_id int,
+    course_name varchar(50),
     PRIMARY KEY(course_id)
 );
 
 CREATE TABLE student(
-	student_id int,
-	student_name varchar(50),
+    student_id int,
+    student_name varchar(50),
     age int,
     courses int,
     city int,
