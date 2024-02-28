@@ -103,7 +103,7 @@ VALUES (201, "Sharif Md.", "Yousuf", "22101128@uap-bd.edu", "01312345628", '2012
 ```
 INSERT INTO city (city_id, city_name)
 VALUES	(1, "Dhaka"),
-		(2, "Chittagong"),
+        (2, "Chittagong"),
         (3, "Narayongonj"),
         (4, "Comilla"),
         (5, "Khulna"),
@@ -113,7 +113,7 @@ VALUES	(1, "Dhaka"),
 
 INSERT INTO course (course_id, course_name)
 VALUES	(101, "Data Structure"),
-		(102, "Algorithm"),
+        (102, "Algorithm"),
         (103, "Object Oriented Programming"),
         (104, "Database"),
         (105, "DLSD"),
@@ -124,7 +124,7 @@ VALUES	(101, "Data Structure"),
 
 INSERT INTO student (student_id, student_name, age, courses, city)
 VALUES	(1101, "Sharif Md. Yousuf", 21, 201, 4),
-		(1102, "Mazharul Islam Sourav", 22, 202, 1),
+        (1102, "Mazharul Islam Sourav", 22, 202, 1),
         (1103, "Faisal Hossain", 20, 101, 6),
         (1104, "Noor Mohammed Priom", 21, 102, 4),
         (1105, "Nusaiba Binte Amin", 22, 103, 1),
