@@ -30,6 +30,15 @@ CREATE TABLE employees(
 );
 ```
 
+```
+CREATE TABLE Food( 
+	shop_name varchar(120), 
+	food_name varchar(150), 
+	size varchar(25) check (size IN ("large","medium","small")), 
+	price smallint
+);
+```
+
 ### Tables with Foreign Keys
 ```
 CREATE TABLE city(
@@ -99,6 +108,24 @@ VALUES (201, "Sharif Md.", "Yousuf", "22101128@uap-bd.edu", "01312345628", '2012
        (206, "Ahsan", "Sourav", "22101123@uap-bd.edu", "01312345623", '2002-08-23', 35000, 3, 4002, 2),
        (207, "Bokhtear Md.", "Abid", "22101124@uap-bd.edu", "01312345624", '2012-08-15', 25000, 2, 4002, 3),
        (208, "Mostafezur Rahman", "Mesbah", "22101126@uap-bd.edu", "01312345623", '2012-02-02', 25000, 3, 4001, 1);  
+```
+
+
+```
+INSERT INTO food(shop_name, food_name, size, price)
+VALUES	('maloncho','pizza_mac','large','700'),
+		('maloncho','pizza_mac','medium','500'),
+		('maloncho','pizza_mac','small','300'),
+		('maloncho','burger','large','600'),
+		('maloncho','burger','medium','400'),
+		('maloncho','burger','small','200'),
+
+		('hut','pizza_mac','large','750'),
+		('hut','pizza_mac','medium','550'),
+		('hut','pizza_mac','small','350'),
+		('hut','burger','large','650'),
+		('hut','burger','medium','450'),
+		('hut','burger','small','250');
 ```
 
 #### Foreign key table data
