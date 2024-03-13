@@ -57,7 +57,6 @@ SELECT u.student_name, s.subject_name
 FROM undergraduate u
 RIGHT JOIN subjects s
 ON u.subject = s.subject_id;
-
 ```
 
 ```
@@ -74,5 +73,4 @@ RIGHT JOIN subjects s
 ON u.subject = s.subject_id
 RIGHT JOIN city c
 ON u.city = c.city_id;
-
 ```
