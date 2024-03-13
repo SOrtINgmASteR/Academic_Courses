@@ -164,6 +164,8 @@ VALUES	(1101, "Sharif Md. Yousuf", 21, 101, 4),
         (1110, "Sadman Sakib", 24, 106,5),
         (1111, "Md. Mukit Hasan", 22, 105, 5),
         (1112, "Md. Raier Rahman Ove", 25, 104, 7),
-        (1113, "Md. Mahfujur Rahman Shuvo", 25, 104, 7);
+        (1113, "Md. Mahfujur Rahman Shuvo", 25, 104, 7), 
+        (1114, "Surovi Akter", 21, NULL, NULL),
+        (1115, "Sharifa Ahmed", 22, NULL, NULL);
 
 ```
