@@ -138,7 +138,8 @@ VALUES	(1, "Dhaka"),
         (4, "Comilla"),
         (5, "Rangpur"),
         (6, "Barishal"),
-        (7, "Noakhali");
+        (7, "Noakhali"),
+        (8, "Chorakandi");
 
 INSERT INTO subjects (subject_id, subject_name)
 VALUES	(101, "Artificial Intelligence"),
@@ -149,7 +150,8 @@ VALUES	(101, "Artificial Intelligence"),
         (106, "Operating System"),
         (107, "Advance Algorithms"),
         (108, "Computer Network"),
-        (109, "Computation Theory");
+        (109, "Computation Theory"),
+        (420, "Curibidda");
 
 INSERT INTO undergraduate (student_id, student_name, age, subject, city)
 VALUES	(1101, "Sharif Md. Yousuf", 21, 101, 4),
