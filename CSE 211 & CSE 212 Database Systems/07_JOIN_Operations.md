@@ -5,7 +5,7 @@
 3. RIGHT JOIN
 4. SELF JOIN  
 
-[*To run all the queries first implement the undergraduate, subjects & city tables*]  
+**To run all the queries first implement the `undergraduate`, `subjects` & `city` tables**  
 
 ### INNER JOIN
 
@@ -53,9 +53,19 @@ ON u.city = c.city_id;
 ### RIGHT JOIN
 
 ```
+SELECT u.student_name, s.subject_name
+FROM undergraduate u
+RIGHT JOIN subjects s
+ON u.subject = s.subject_id;
 
 ```
 
+```
+SELECT u.student_name, c.city_name
+FROM undergraduate u
+RIGHT JOIN city c
+ON u.city = c.city_id;
+```
 
 ```
 SELECT u.student_name, s.subject_name, c.city_name
