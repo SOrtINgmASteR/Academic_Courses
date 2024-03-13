@@ -9,14 +9,14 @@
 
 ### INNER JOIN
 
-```
+```SQL
 SELECT u.student_name, s.subject_name
 FROM undergraduate u 
 INNER JOIN subjects s
 ON u.subject = s.subject_id;
 ```
 
-```
+```SQL
 SELECT u.student_name, s.subject_name, c.city_name
 FROM undergraduate u 
 INNER JOIN subjects s
@@ -27,21 +27,21 @@ ON u.city = c.city_id;
 
 ### LEFT JOIN
 
-```
+```SQL
 SELECT u.student_name, c.city_name
 FROM undergraduate u
 LEFT JOIN city c
 ON u.city = c.city_id;
 ```
 
-```
+```SQL
 SELECT u.student_name, s.subject_name
 FROM undergraduate u
 LEFT JOIN subjects s
 ON u.subject = s.subject_id;
 ```
 
-```
+```SQL
 SELECT u.student_name, s.subject_name, c.city_name
 FROM undergraduate u
 LEFT JOIN subjects s
@@ -52,21 +52,21 @@ ON u.city = c.city_id;
 
 ### RIGHT JOIN
 
-```
+```SQL
 SELECT u.student_name, s.subject_name
 FROM undergraduate u
 RIGHT JOIN subjects s
 ON u.subject = s.subject_id;
 ```
 
-```
+```SQL
 SELECT u.student_name, c.city_name
 FROM undergraduate u
 RIGHT JOIN city c
 ON u.city = c.city_id;
 ```
 
-```
+```SQL
 SELECT u.student_name, s.subject_name, c.city_name
 FROM undergraduate u
 RIGHT JOIN subjects s
