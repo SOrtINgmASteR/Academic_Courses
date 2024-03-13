@@ -6,17 +6,10 @@ USE priom_22101134;
 -- Tables Creations
 
 CREATE TABLE classroom(
-<<<<<<< HEAD
 	building varchar(15), 
 	room_number varchar(7),
 	capacity numeric(4, 0), 
 	PRIMARY KEY (building, room_number)
-=======
-	building varchar(15),
-	room_number varchar(7),
-	capacity numeric(4, 0),
-    PRIMARY KEY (building, room_number)
->>>>>>> 157c2045076aafbbb7a4fab5e0878564c1f234b5
 );
 
 CREATE TABLE department(
