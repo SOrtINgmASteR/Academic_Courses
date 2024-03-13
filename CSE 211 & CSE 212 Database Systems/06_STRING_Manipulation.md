@@ -30,6 +30,8 @@ WHERE student_name LIKE "r%e";
 
 ### CONCAT(a1, s1, a2, s2, .....)
 
+Contacts all the string attributes and parameters  
+
 ```
 SELECT CONCAT(student_name, " random ", dept_name, " random ") "Column Name"
 FROM students;
@@ -47,12 +49,16 @@ FROM students;
 
 ### UPPER(a) & LOWER(a)
 
+Makes 'a' attributes lowercase or uppercase.  
+
 ```
 SELECT UPPER(student_name) "Upper", LOWER(student_name) "Lower"
 FROM students;
 ```
 
 ### LENGTH(a)
+
+Gives the length of 'a' attribute.
 
 ```
 SELECT LENGTH(student_name)
