@@ -56,7 +56,7 @@ CREATE TABLE section(
 	PRIMARY KEY(course_id, sec_id, semester, year),
 	FOREIGN KEY(course_id) REFERENCES course(course_id),
 	FOREIGN KEY(building, room_number) REFERENCES classroom(building, room_number),
-    FOREIGN KEY(time_slot_id) REFERENCES timeslot(time_slot_id) 
+	FOREIGN KEY(time_slot_id) REFERENCES timeslot(time_slot_id) 
 );
 
 CREATE TABLE teaches(
