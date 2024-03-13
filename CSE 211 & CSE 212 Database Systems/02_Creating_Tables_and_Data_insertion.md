@@ -1,3 +1,8 @@
+## Table Information
+- showing all the tables in a databases - `SHOW TABLES;`  
+- showing the structure/columns of the table - `SHOW COLUMNS FROM <table_name>;`  or `DESC <table_name>;` *Example :* `SHOW COLUMNS FROM employees;`, `SHOW COLUMNS FROM students;`, `SHOW COLUMNS FROM food;`   
+- droping a table - `DROP TABLE <table_name>;` *Example :* `DROP TABLE city;`, `DROP TABLE subjects`, `DROP TABLE employees`  
+
 ## Creating a Table  
 ```
 CREATE TABLE students(
@@ -47,28 +52,24 @@ CREATE TABLE city(
     PRIMARY KEY(city_id)
 );
 
-CREATE TABLE course(
-    course_id int,
-    course_name varchar(50),
-    PRIMARY KEY(course_id)
+CREATE TABLE subjects(
+    subject_id int,
+    subject_name varchar(50),
+    PRIMARY KEY(subject_id)
 );
 
-CREATE TABLE student(
+CREATE TABLE undergraduate(
     student_id int,
     student_name varchar(50),
     age int,
-    courses int,
+    subject int,
     city int,
     PRIMARY KEY(student_id),
     FOREIGN KEY(city) REFERENCES city(city_id), 
-    FOREIGN KEY(courses) REFERENCES course(course_id)
+    FOREIGN KEY(subject) REFERENCES subjects(subject_id)
 );
 ```
 
-## Table Information
-- showing all the tables - `SHOW TABLES;`  
-- showing the structure of the table - `SHOW COLUMNS FROM <table_name>;`  or `DESC <table_name>;`  
-- droping a table - `DROP TABLE <table_name>;` 
 
 ## Inserting Data
 ```
@@ -113,19 +114,19 @@ VALUES (201, "Sharif Md.", "Yousuf", "22101128@uap-bd.edu", "01312345628", '2012
 
 ```
 INSERT INTO food(shop_name, food_name, size, price)
-VALUES	('maloncho','pizza_mac','large','700'),
-		('maloncho','pizza_mac','medium','500'),
-		('maloncho','pizza_mac','small','300'),
-		('maloncho','burger','large','600'),
-		('maloncho','burger','medium','400'),
-		('maloncho','burger','small','200'),
+VALUES	("maloncho", 'pizza_mac', 'large', 700),
+		("maloncho", 'pizza_mac', 'medium', 500),
+		("maloncho", 'pizza_mac', 'small', 300),
+		("maloncho", 'burger', 'large', 600),
+		("maloncho", 'burger', 'medium', 400),
+		("maloncho", 'burger', 'small', 200),
 
-		('hut','pizza_mac','large','750'),
-		('hut','pizza_mac','medium','550'),
-		('hut','pizza_mac','small','350'),
-		('hut','burger','large','650'),
-		('hut','burger','medium','450'),
-		('hut','burger','small','250');
+		("hut", 'pizza_mac', 'large', 750),
+		("hut", 'pizza_mac', 'medium', 550),
+		("hut", 'pizza_mac', 'small', 350),
+		("hut", 'burger', 'large', 650),
+		("hut", 'burger', 'medium', 450),
+		("hut", 'burger', 'small', 250);
 ```
 
 #### Foreign key table data
@@ -133,37 +134,36 @@ VALUES	('maloncho','pizza_mac','large','700'),
 INSERT INTO city (city_id, city_name)
 VALUES	(1, "Dhaka"),
         (2, "Chittagong"),
-        (3, "Narayongonj"),
+        (3, "Mymensingh"),
         (4, "Comilla"),
-        (5, "Khulna"),
+        (5, "Rangpur"),
         (6, "Barishal"),
-        (7, "Syleth"),
-        (8, "Rangpur");
+        (7, "Noakhali");
 
-INSERT INTO course (course_id, course_name)
-VALUES	(101, "Data Structure"),
-        (102, "Algorithm"),
-        (103, "Object Oriented Programming"),
-        (104, "Database"),
-        (105, "DLSD"),
+INSERT INTO subjects (subject_id, subject_name)
+VALUES	(101, "Artificial Intelligence"),
+        (102, "Game Development"),
+        (103, "Software Engineering"),
+        (104, "Cybersecurity"),
+        (105, "Systems Design"),
         (106, "Operating System"),
-        (201, "Physics"),
-        (202, "Math"),
-        (203, "Chemistry");
+        (107, "Advance Algorithms"),
+        (108, "Computer Network"),
+        (109, "Computation Theory");
 
-INSERT INTO student (student_id, student_name, age, courses, city)
-VALUES	(1101, "Sharif Md. Yousuf", 21, 201, 4),
-        (1102, "Mazharul Islam Sourav", 22, 202, 1),
-        (1103, "Faisal Hossain", 20, 101, 6),
+INSERT INTO undergraduate (student_id, student_name, age, subject, city)
+VALUES	(1101, "Sharif Md. Yousuf", 21, 101, 4),
+        (1102, "Mazharul Islam Sourav", 22, 102, 1),
+        (1103, "Faisal Hossain", 20, 103, 6),
         (1104, "Noor Mohammed Priom", 21, 102, 4),
-        (1105, "Nusaiba Binte Amin", 22, 103, 1),
-        (1106, "Shanjida Islam", 20, 103, 4),
-        (1107, "Sarmin Akter Saba", 23, 203, 2),
-        (1108, "Shornali Akter", 24, 105, 5),
-        (1109, "Nafisa Ali", 19, 106, 3),
-        (1110, "Sadman Sakib", 24, 105, 8),
-        (1111, "Md. Mukit Hasan", 22, 202, 8),
+        (1105, "Nusaiba Binte Amin", 22, 104, 1),
+        (1106, "Shanjida Islam", 20, 105, 4),
+        (1107, "Sarmin Akter Saba", 23, 109, 2),
+        (1108, "Shornali Akter", 24, 108, 3),
+        (1109, "Nafisa Ali", 19, 107, 3),
+        (1110, "Sadman Sakib", 24, 106,5),
+        (1111, "Md. Mukit Hasan", 22, 105, 5),
         (1112, "Md. Raier Rahman Ove", 25, 104, 7),
-        (1113, "Md. Mahfujur Rahman Shuvo", 26, 104, 7);
+        (1113, "Md. Mahfujur Rahman Shuvo", 25, 104, 7);
 
 ```
