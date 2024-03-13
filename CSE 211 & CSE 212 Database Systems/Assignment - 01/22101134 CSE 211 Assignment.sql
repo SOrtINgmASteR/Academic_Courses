@@ -7,8 +7,8 @@ USE priom_22101134;
 
 CREATE TABLE classroom(
 	building varchar(15),
-    room_number varchar(7),
-    capacity numeric(4, 0),
+	room_number varchar(7),
+	capacity numeric(4, 0),
     PRIMARY KEY (building, room_number)
 );
 
