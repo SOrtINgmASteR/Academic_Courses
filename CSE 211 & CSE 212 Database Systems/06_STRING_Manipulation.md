@@ -1,27 +1,29 @@
+**To run all the queries first implement the necessary tables.**  
+
 ### LIKE
 
-- "%a%" If the attribute has an 'a' at anywhere 
+- `"%a%"` If the attribute has an 'a' at anywhere 
 ```SQL
 SELECT student_name
 FROM students
 WHERE student_name LIKE "%a%";
 ```
 
-- "a%" If the attribute starts with an 'a'
+- `"a%"` If the attribute starts with an 'a'
 ```SQL
 SELECT student_name
 FROM students
 WHERE student_name LIKE "a%";
 ```
 
-- "%a" If the attribute ends with an 'a'
+- `"%a"` If the attribute ends with an 'a'
 ```SQL
 SELECT student_name
 FROM students
 WHERE student_name LIKE "%a";
 ```
 
-- "r%e" If the attribute starts with an 'a' & ends with an 'e'
+- `"r%e"` If the attribute starts with an 'a' & ends with an 'e'
 ```SQL
 SELECT student_name
 FROM students
@@ -101,4 +103,3 @@ FROM students;
 SELECT student_name, INSTR(student_name, "ra")
 FROM students;
 ```
-

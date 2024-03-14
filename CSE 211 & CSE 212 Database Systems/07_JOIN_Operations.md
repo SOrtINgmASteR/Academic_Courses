@@ -5,7 +5,7 @@
 3. RIGHT JOIN
 4. SELF JOIN  
 
-**To run all the queries first implement the `undergraduate`, `subjects` & `city` tables**  
+**To run all the queries first implement the `undergraduate`, `subjects` & `city` tables.**  
 
 ### INNER JOIN
 
