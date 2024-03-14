@@ -23,7 +23,7 @@ FROM students
 WHERE student_name LIKE "%a";
 ```
 
-- `"r%e"` If the attribute starts with an 'a' & ends with an 'e'
+- `"r%e"` If the attribute starts with an 'r' & ends with an 'e'
 ```SQL
 SELECT student_name
 FROM students
