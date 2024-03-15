@@ -1,5 +1,4 @@
 //Fractional Knapsack
-
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -39,13 +38,16 @@ int main()
         printf("%d %d %.2lf\n", items[i].value, items[i].weight, items[i].unit_value);
     }
     printf("\n");
+
     qsort(items, 3, sizeof(struct item), compare);
+
     printf("Sorting in descending Order with uni value : ");
     for(i = 0; i < 3; i++)
     {
         printf("%d %d %.2lf\n", items[i].value, items[i].weight, items[i].unit_value);
     }
     printf("\n");
+
     double collected_value = greedy_fractional_knapsack(50, items, 0, 3);
     printf("Maximum Value : %.2lf\n",collected_value);
     return 0;

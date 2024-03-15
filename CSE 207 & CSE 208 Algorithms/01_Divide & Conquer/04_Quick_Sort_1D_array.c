@@ -2,12 +2,12 @@
 //Time Complexity ==> O(nlog(n))
 //Space Complexity ==> O(log n)
 #include<stdio.h>
-int partition(int a[], int low, int high)
+int partition(int a[], int left, int right)
 {
     int i, j, temp, pivot;
-    pivot = a[low];
-    i = low;
-    j = high;
+    pivot = a[left];
+    i = left;
+    j = right;
     while(i < j)
     {
 
@@ -21,18 +21,18 @@ int partition(int a[], int low, int high)
         }
     }
     temp = a[j];
-    a[j] = a[low];
-    a[low] = temp;
+    a[j] = a[left];
+    a[left] = temp;
     return j;
 }
-void quick_sort(int a[], int low, int high)
+void quick_sort(int a[], int left, int right)
 {
-    if(low < high)
+    if(left < right)
     {
         int pivot_index;
-        pivot_index = partition(a, low, high);
-        quick_sort(a, low, pivot_index - 1);
-        quick_sort(a, pivot_index + 1, high);
+        pivot_index = partition(a, left, right);
+        quick_sort(a, left, pivot_index - 1);
+        quick_sort(a, pivot_index + 1, right);
     }
 }
 int main()
