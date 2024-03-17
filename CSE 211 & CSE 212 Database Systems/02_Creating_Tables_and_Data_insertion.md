@@ -147,13 +147,13 @@ VALUES	("Maloncho", "pizza_mac", 'large', 700),
 #### Foreign key table data
 ```
 INSERT INTO users(id, name)
-VALUES	(1, "Person 1"),
-		(2, "Person 2"),
+VALUES  (1, "Person 1"),
+        (2, "Person 2"),
         (3, "Person 3");
         
 INSERT INTO transaction(id, amount)
-VALUES (1, 100),
-		(2, 200),
+VALUES  (1, 100),
+        (2, 200),
         (3, 700),
         (1, 100),
         (2, 200),
