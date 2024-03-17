@@ -44,7 +44,7 @@ CREATE TABLE Food(
 );
 ```
 
-### Tables with Foreign Keys
+#### Tables with Foreign Keys
 
 ```SQL
 CREATE TABLE users(
