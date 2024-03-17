@@ -135,7 +135,6 @@ VALUES	("Maloncho", "pizza_mac", 'large', 700),
 		("Maloncho", "burger", 'large', 600),
 		("Maloncho", "burger", 'medium', 400),
 		("Maloncho", "burger", 'small', 200),
-
 		("Hut", "pizza_mac", 'large', 750),
 		("Hut", "pizza_mac", 'medium', 550),
 		("Hut", "pizza_mac", 'small', 350),
