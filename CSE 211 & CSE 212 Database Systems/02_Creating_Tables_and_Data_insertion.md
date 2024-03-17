@@ -4,7 +4,7 @@
 - droping a table - `DROP TABLE <table_name>;` *Example :* `DROP TABLE city;`, `DROP TABLE subjects`, `DROP TABLE employees`  
 
 ## Creating a Table  
-```
+```SQL
 CREATE TABLE students(
     id int,  
     student_name varchar(50),  
@@ -19,7 +19,7 @@ CREATE TABLE students(
 );
 ```
 
-```
+```SQL
 CREATE TABLE employees(
     employee_id int,
     first_name varchar(30),
@@ -35,7 +35,7 @@ CREATE TABLE employees(
 );
 ```
 
-```
+```SQL
 CREATE TABLE Food( 
 	shop_name varchar(120), 
 	food_name varchar(150), 
@@ -46,7 +46,7 @@ CREATE TABLE Food(
 
 ### Tables with Foreign Keys
 
-```
+```SQL
 CREATE TABLE users(
     id int,
     name varchar(50),
@@ -60,7 +60,7 @@ CREATE TABLE transaction(
 );
 ```
 
-```
+```SQL
 CREATE TABLE city(
     city_id int,
     city_name varchar(50),
@@ -87,7 +87,7 @@ CREATE TABLE undergraduate(
 
 
 ## Inserting Data
-```
+```SQL
 INSERT INTO students(id, student_name, gender, dept_name, admission_date, fees, waiver, gpa, advisor_name)
 VALUES  (22101128, "Sharif Md. Yousuf", "Male", "CSE", '2022-04-04', 85000.00, 50, 3.83, "Shahid"),
         (22101126, "Mostafezur Rahman", "Male", "CSE", '2022-03-03', 85000.00, 25, 3.35, "Shahid"),
@@ -114,7 +114,7 @@ VALUES  (22101128, "Sharif Md. Yousuf", "Male", "CSE", '2022-04-04', 85000.00, 5
         (22101146, "Sarmin Akter Saba", "Female", "CSE", '2022-03-03', 85000.00, 50, 3.89, "Shahid");
 ```
 
-```
+```SQL
 INSERT INTO employees(employee_id, first_name, last_name, email, phone_number, hiring_date, salary, comission, manager_id, department_id)
 VALUES (201, "Sharif Md.", "Yousuf", "22101128@uap-bd.edu", "01312345628", '2012-08-25', 25000, 2, 4001, 3),
        (202, "Faisal", "Hossain", "22101132@uap-bd.edu", "01312345632", '2008-02-01', 30000, 3, 4002, 3),
@@ -127,7 +127,7 @@ VALUES (201, "Sharif Md.", "Yousuf", "22101128@uap-bd.edu", "01312345628", '2012
 ```
 
 
-```
+```SQL
 INSERT INTO food(shop_name, food_name, size, price)
 VALUES	("Maloncho", "pizza_mac", 'large', 700),
 		("Maloncho", "pizza_mac", 'medium', 500),
@@ -145,7 +145,7 @@ VALUES	("Maloncho", "pizza_mac", 'large', 700),
 ```
 
 #### Foreign key table data
-```
+```SQL
 INSERT INTO users(id, name)
 VALUES  (1, "Person 1"),
         (2, "Person 2"),
@@ -163,7 +163,7 @@ VALUES  (1, 100),
         (3, 700);
 ```
 
-```
+```SQL
 INSERT INTO city (city_id, city_name)
 VALUES	(1, "Dhaka"),
         (2, "Chittagong"),
