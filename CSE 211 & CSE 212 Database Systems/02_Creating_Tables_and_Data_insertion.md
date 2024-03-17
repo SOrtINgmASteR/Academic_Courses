@@ -129,19 +129,19 @@ VALUES (201, "Sharif Md.", "Yousuf", "22101128@uap-bd.edu", "01312345628", '2012
 
 ```
 INSERT INTO food(shop_name, food_name, size, price)
-VALUES	("maloncho", 'pizza_mac', 'large', 700),
-		("maloncho", 'pizza_mac', 'medium', 500),
-		("maloncho", 'pizza_mac', 'small', 300),
-		("maloncho", 'burger', 'large', 600),
-		("maloncho", 'burger', 'medium', 400),
-		("maloncho", 'burger', 'small', 200),
+VALUES	("Maloncho", "pizza_mac", 'large', 700),
+		("Maloncho", "pizza_mac", 'medium', 500),
+		("Maloncho", "pizza_mac", 'small', 300),
+		("Maloncho", "burger", 'large', 600),
+		("Maloncho", "burger", 'medium', 400),
+		("Maloncho", "burger", 'small', 200),
 
-		("hut", 'pizza_mac', 'large', 750),
-		("hut", 'pizza_mac', 'medium', 550),
-		("hut", 'pizza_mac', 'small', 350),
-		("hut", 'burger', 'large', 650),
-		("hut", 'burger', 'medium', 450),
-		("hut", 'burger', 'small', 250);
+		("Hut", "pizza_mac", 'large', 750),
+		("Hut", "pizza_mac", 'medium', 550),
+		("Hut", "pizza_mac", 'small', 350),
+		("Hut", "burger", 'large', 650),
+		("Hut", "burger", 'medium', 450),
+		("Hut", "burger", 'small', 250);
 ```
 
 #### Foreign key table data
