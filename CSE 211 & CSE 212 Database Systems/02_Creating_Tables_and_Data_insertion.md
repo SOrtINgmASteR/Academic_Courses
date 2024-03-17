@@ -45,6 +45,21 @@ CREATE TABLE Food(
 ```
 
 ### Tables with Foreign Keys
+
+```
+CREATE TABLE users(
+	id int,
+    name varchar(50),
+    PRIMARY KEY(id)
+);
+
+CREATE TABLE transaction(
+	id int,
+    amount int,    
+    FOREIGN KEY (id) REFERENCES users(id)
+);
+```
+
 ```
 CREATE TABLE city(
     city_id int,
@@ -130,6 +145,24 @@ VALUES	("maloncho", 'pizza_mac', 'large', 700),
 ```
 
 #### Foreign key table data
+```
+INSERT INTO users(id, name)
+VALUES	(1, "Person 1"),
+		(2, "Person 2"),
+        (3, "Person 3");
+        
+INSERT INTO transaction(id, amount)
+VALUES (1, 100),
+		(2, 200),
+        (3, 700),
+        (1, 100),
+        (2, 200),
+        (3, 700),
+        (1, 100),
+        (2, 200),
+        (3, 700);
+```
+
 ```
 INSERT INTO city (city_id, city_name)
 VALUES	(1, "Dhaka"),
