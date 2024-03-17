@@ -55,7 +55,7 @@ CREATE TABLE users(
 
 CREATE TABLE transaction(
 	id int,
-    amount int,    
+    amount int,
     FOREIGN KEY (id) REFERENCES users(id)
 );
 ```
