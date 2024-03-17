@@ -48,13 +48,13 @@ CREATE TABLE Food(
 
 ```
 CREATE TABLE users(
-	id int,
+    id int,
     name varchar(50),
     PRIMARY KEY(id)
 );
 
 CREATE TABLE transaction(
-	id int,
+    id int,
     amount int,
     FOREIGN KEY (id) REFERENCES users(id)
 );
