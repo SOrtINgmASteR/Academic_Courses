@@ -39,14 +39,14 @@ void merge(int a[], int left, int mid, int right)
     }
 }
 
-void mergeSort(int a[], int left, int right)
+void merge_sort(int a[], int left, int right)
 {
     int mid;
     if(left < right)
     {
         mid = (left + right) / 2;
-        mergeSort(a, left, mid);
-        mergeSort(a, mid + 1, right);
+        merge_sort(a, left, mid);
+        merge_sort(a, mid + 1, right);
         merge(a, left, mid, right);
     }
 }
@@ -62,7 +62,7 @@ int main()
     }
     printf("\n");
 
-    mergeSort(a, 0, 9);
+    merge_sort(a, 0, 9);
 
     printf("After Sorting : ");
     for(i = 0; i < n; i++)
