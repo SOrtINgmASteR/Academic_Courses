@@ -41,7 +41,7 @@ int main()
 
     qsort(items, 3, sizeof(struct item), compare);
 
-    printf("Sorting in descending Order with uni value : ");
+    printf("Sorting in descending Order with unit value : ");
     for(i = 0; i < 3; i++)
     {
         printf("%d %d %.2lf\n", items[i].value, items[i].weight, items[i].unit_value);
