@@ -17,4 +17,7 @@ public class A {
     public void methodA(){
         System.out.println("Method in A.");
     }
+    public void commonMethod(){
+        System.out.println("Common method in A.");
+    }
 }

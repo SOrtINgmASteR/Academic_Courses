@@ -27,5 +27,8 @@ public class Main {
         c.methodA();
         c.methodB();
         c.methodC();
+
+        c.commonMethod();
+
     }
 }
