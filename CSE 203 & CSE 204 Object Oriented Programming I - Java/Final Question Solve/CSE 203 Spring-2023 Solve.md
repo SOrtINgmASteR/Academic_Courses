@@ -4,6 +4,7 @@
 
 <h3 style="text-align:center;">Answer to the Question no 2</h3>  
 ***(a)***   
+
 ```java
 import java.util.Scanner;
 public class BMICalculation {
