@@ -68,6 +68,7 @@ public class ArraySumAndAverage {
 
 <h3 style="text-align:center;">Answer to the Question no 3</h3>  
 ***(a)***  
+
 ```java
 public abstract class Phone {
     String manufacturer;
