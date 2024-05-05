@@ -3,7 +3,7 @@
 <h3 style="text-align:center;">Answer to the Question no 1</h3>  
 
 <h3 style="text-align:center;">Answer to the Question no 2</h3>  
-***(a)***
+***(a)***   
 ```java
 import java.util.Scanner;
 public class BMICalculation {
@@ -43,7 +43,7 @@ public class BMICalculation {
 }
 ```   
 
-***(b)***  
+***(b)***    
 ```java
 import java.util.Scanner;
 public class ArraySumAndAverage {
