@@ -2,6 +2,30 @@
 
 <h3 style="text-align:center;">Answer to the Question no 1</h3>  
 
+***(a)***  Polymorphism in Java is achieved through -   
+- Method Overriding : Method overriding occurs when a subclass provides a specific implementation of a 
+method that is already defined in its superclass. The method in the subclass has the same name and 
+parameters as the method in the superclass.  
+
+
+- Method Overloading : Method overloading occurs when a class has multiple methods with the same name 
+but different parameter lists. The methods may have different numbers or types of parameters.  
+
+
+- Subclass polymorphism : A parent class reference is used to refer to a child class object.
+
+
+***(b)***  Difference between Abstract classes & Interfaces -  
+
+| Abstract classes                                                | Interfaces                                                       |
+|-----------------------------------------------------------------|------------------------------------------------------------------|
+| 1. Can contain constructor, normal instance variables & method. | 1. Only can contain abstract method.                             |
+| 2. `extends` is used to make a child class.                     | 2. `implements` is used to make a child class.                   |
+| 3. Multiple inheritance can't be achieved.                      | 3. Multiple inheritance can be achieved.                         |
+| 4. Necessary to give `abstract` keyword for abstract method.    | 4. Not necessary to give `abstract` keyword for abstract method. |
+
+
+
 <h3 style="text-align:center;">Answer to the Question no 2</h3>  
 
 ***(a)***   
