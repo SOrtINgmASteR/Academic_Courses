@@ -25,10 +25,8 @@ but different parameter lists. The methods may have different numbers or types o
 | 4. Necessary to give `abstract` keyword for abstract method.    | 4. Not necessary to give `abstract` keyword for abstract method. |
 
 
-
-<h3 style="text-align:center;">Answer to the Question no 2</h3>  
-
-***(a)***   
+<h3 style="text-align:center;">Answer to the Question no 2</h3>   
+***(a)***  
 
 ```java
 import java.util.Scanner;
@@ -147,4 +145,76 @@ public class SmartPhone extends Phone implements SmartDevice{
 
 <h3 style="text-align:center;">Answer to the Question no 5</h3>  
 
-<h3 style="text-align:center;">Answer to the Question no 6</h3>  
+***(a)***  
+
+```java
+public class InvalidTemperatureRangeException extends Exception{
+    public InvalidTemperatureRangeException(int minTemp, int maxTemp){
+        super("Temperature should be between " + minTemp + " and " + maxTemp + " degrees.");
+    }
+}
+```
+
+***(b)***  
+```java
+public class RunAirCooler {
+    public static void runAirCooler(int temp) throws InvalidTemperatureRangeException{
+        if(temp > 10 && temp < 28){
+            System.out.println("Running at " + temp);
+        }
+        else {
+            throw new InvalidTemperatureRangeException(10, 28);
+        }
+    }
+
+    public static void main(String[] args) {
+        try {
+            runAirCooler(11);
+            runAirCooler(34);
+        }
+        catch (InvalidTemperatureRangeException e){
+            System.out.println(e.getMessage());
+        }
+    }
+}
+```
+
+<h3 style="text-align:center;">OR</h3>   
+
+***(c)***   
+Thread Class -  
+```java
+import java.util.Random;
+public class GenerateRandomNumber implements Runnable {
+    int n, max, min;
+    public GenerateRandomNumber(int n, int min, int max){
+        this.n = n;
+        this.max = max;
+        this.min = min;
+    }
+    @Override
+    public void run() {
+        for(int i = 0; i < n; i++){
+            Random random = new Random();
+            int randomNumber = min + random.nextInt(max - min + 1);
+            System.out.println(randomNumber);
+        }
+    }
+}
+```  
+
+Multithreaded Program to run 3 Threads -   
+```java
+public class MultiThreadedProgram {
+    public static void main(String[] args) {
+        Thread t1 = new Thread(new GenerateRandomNumber(10, 1, 100));
+        Thread t2 = new Thread(new GenerateRandomNumber(5, 101, 200));
+        Thread t3 = new Thread(new GenerateRandomNumber(8, 201, 300));
+
+        t1.start();
+        t2.start();
+        t3.start();
+    }
+}
+```
+

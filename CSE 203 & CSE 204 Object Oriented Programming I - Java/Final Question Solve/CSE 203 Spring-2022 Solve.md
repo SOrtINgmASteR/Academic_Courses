@@ -187,9 +187,10 @@ public class LowAttendanceException extends Exception{
 
 
 **(b)**  
+Thread Class -
 ```java
 import java.util.Random;
-class GenerateRandomNumber extends Thread {
+public class GenerateRandomNumber extends Thread {
     int max;
     int min;
     public GenerateRandomNumber(int min, int max){
@@ -205,12 +206,16 @@ class GenerateRandomNumber extends Thread {
         }
     }
 }
+```  
 
-public class MultiTreadedProgram {
+Multithreaded Program to run 3 Threads -
+```Java
+public class MultiThreadedProgram {
     public static void main(String[] args) {
         GenerateRandomNumber t1 = new GenerateRandomNumber(10, 20);
         GenerateRandomNumber t2 = new GenerateRandomNumber(50, 60);
         GenerateRandomNumber t3 = new GenerateRandomNumber(100, 120);
+        
         t1.start();
         t2.start();
         t3.start();

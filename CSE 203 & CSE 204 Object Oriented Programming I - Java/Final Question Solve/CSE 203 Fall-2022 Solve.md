@@ -167,7 +167,7 @@ public class MultilevelTryCatch{
                 System.out.println(a[10]);
             }
             catch(ArithmeticException e){
-                System.out.println("Arithmatic Exception");
+                System.out.println("Arithmetic Exception");
             }
         }
         catch(ArrayIndexOutOfBoundsException e){
@@ -175,15 +175,109 @@ public class MultilevelTryCatch{
         }
     }
 }
-```
-<h3 style="text-align:center;">OR</h3>  
+``` 
 
-***(a)***  
+***OR - (a)***  
+
+Thread Class -
+```java
+public class AddEvenNumbersToArray extends Thread{
+    public static int array[] = new int[1000];
+    public static int index = 0;
+    int min, max;
+    public AddEvenNumbersToArray(int min, int max){
+        this.min = min;
+        this.max = max;
+    }
+
+    @Override
+    public void run(){
+        for(int i = min; i <= max; i++){
+            if(i % 2 == 0){
+                synchronized(array){
+                    array[index] = i;
+                    index++;
+                }
+            }
+        }
+    }
+}
+```  
+
+Multithreaded Program to run 4 Threads -
+```java
+public class MultiThreadedProgram {
+    public static void main(String[] args) {
+        AddEvenNumbersToArray t1 = new AddEvenNumbersToArray(20, 30);
+        AddEvenNumbersToArray t2 = new AddEvenNumbersToArray(40, 50);
+        AddEvenNumbersToArray t3 = new AddEvenNumbersToArray(60, 70);
+        AddEvenNumbersToArray t4 = new AddEvenNumbersToArray(80, 90);
+
+        t1.start();
+        t2.start();
+        t3.start();
+        t4.start();
+    }
+}
+```
 
 ***(b)***  
 
-<h3 style="text-align:center;">OR</h3>  
+```java
+public class InvalidCGPAException extends Exception{
+    public InvalidCGPAException(double minCGPA, double maxCGPA){
+        super("Valid CGPA should be between " + minCGPA + " and " + maxCGPA);
+    }
+}
+```
 
-***(b)***
+***OR - (b)***   
+Thread Class -   
+```java
+public class AddPrimeNumbersToArray extends Thread{
+    public static int array[] = new int[1000];
+    public static int index = 0;
+
+    int n, min, max;
+    public static int isPrime(int n){
+        if(n == 0 || n == 1 ) return 0;
+        else if(n == 2) return 1;
+        for(int i = 2; i < n; i++){
+            if(n % i == 0) return 0;
+        }
+        return 1;
+    }
+    public AddPrimeNumbersToArray(int n, int min, int max){
+        this.n = n;
+        this.min = min;
+        this.max = max;
+    }
+    @Override
+    public void run(){
+        for(int i = 0, j = min; i < n && j <= max; i++, j++){
+            if(isPrime(j) == 1){
+                synchronized (array){
+                    array[index] = j;
+                    index++;
+                }
+            }
+        }
+    }
+}
+```
+Multithreaded Program to run thread -   
+```java
+public class MultiThreadedProgramFall22second {
+    public static void main(String[] args) {
+        AddPrimeNumbersToArray t1 = new AddPrimeNumbersToArray(5, 50, 80);
+        AddPrimeNumbersToArray t2 = new AddPrimeNumbersToArray(5, 50, 80);
+        AddPrimeNumbersToArray t3 = new AddPrimeNumbersToArray(5, 50, 80);
+
+        t1.start();
+        t2.start();
+        t3.start();
+    }
+}
+```
 
 
