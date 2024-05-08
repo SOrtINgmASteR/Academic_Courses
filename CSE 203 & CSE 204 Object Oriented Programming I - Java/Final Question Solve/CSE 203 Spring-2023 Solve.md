@@ -26,7 +26,6 @@ but different parameter lists. The methods may have different numbers or types o
 
 
 <h3 style="text-align:center;">Answer to the Question no 2</h3>   
-
 ***(a)***  
 
 ```java
@@ -217,5 +216,33 @@ public class MultiThreadedProgram {
         t3.start();
     }
 }
-```
+```  
 
+***(d)***
+```java
+import java.io.*;
+public class Spring_23_5_d {
+    public static void main(String[] args) {
+        try{
+            FileReader fileReader = new FileReader("input.txt");
+            BufferedReader bufferedReader = new BufferedReader(fileReader);
+            while (true){
+                String line;
+                line = bufferedReader.readLine();
+                if(line == null) break;
+                String marksID[] = line.split(" ");
+                int mark = Integer.valueOf(marksID[1]);
+                if(mark < 40){
+                    System.out.println(marksID[0] + " " + "F");
+                }
+                else {
+                    System.out.println(marksID[0] + " " + "P");
+                }
+            }
+        }
+        catch(Exception e){
+            System.out.println("Unsuccessful Read!");
+        }
+    }
+}
+```
