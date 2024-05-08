@@ -26,8 +26,8 @@ but different parameter lists. The methods may have different numbers or types o
 
 
 <h3 style="text-align:center;">Answer to the Question no 2</h3>   
-***(a)***  
 
+***(a)***  
 ```java
 import java.util.Scanner;
 public class BMICalculation {
