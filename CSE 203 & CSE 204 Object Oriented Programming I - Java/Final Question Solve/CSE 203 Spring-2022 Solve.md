@@ -226,7 +226,7 @@ public class MultiThreadedProgram {
 **OR - (b)**  
 ```java
 import java.io.*;
-public class Main {
+public class BufferedReading {
     public static void main(String[] args) {
         try{
             FileReader fileReader = new FileReader("voters.txt");
