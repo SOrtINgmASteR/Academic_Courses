@@ -267,7 +267,7 @@ public class AddPrimeNumbersToArray extends Thread{
 ```
 Multithreaded Program to run thread -   
 ```java
-public class MultiThreadedProgramFall22second {
+public class MultiThreadedProgram {
     public static void main(String[] args) {
         AddPrimeNumbersToArray t1 = new AddPrimeNumbersToArray(5, 50, 80);
         AddPrimeNumbersToArray t2 = new AddPrimeNumbersToArray(5, 50, 80);
