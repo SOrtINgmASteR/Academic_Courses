@@ -221,7 +221,7 @@ public class MultiThreadedProgram {
 ***(d)***
 ```java
 import java.io.*;
-public class Spring_23_5_d {
+public class BufferedReading {
     public static void main(String[] args) {
         try{
             FileReader fileReader = new FileReader("input.txt");
