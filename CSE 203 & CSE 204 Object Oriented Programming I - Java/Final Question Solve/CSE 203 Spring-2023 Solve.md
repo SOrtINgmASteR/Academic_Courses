@@ -27,7 +27,7 @@ but different parameter lists. The methods may have different numbers or types o
 
 <h3 style="text-align:center;">Answer to the Question no 2</h3>   
 
-***(a)***  
+***(a)***
 ```java
 import java.util.Scanner;
 public class BMICalculation {
@@ -143,10 +143,94 @@ public class SmartPhone extends Phone implements SmartDevice{
 
 <h3 style="text-align:center;">Answer to the Question no 4</h3>  
 
+***(a)***  
+`Student` abstract Class -   
+```java
+public abstract class Student {
+    double highestCGPA;
+}
+```  
+`UnderGraduateStudent` class -  
+```java
+public class UnderGraduateStudent extends Student{
+    // This class has the highestCGPA of parent class
+}
+```  
+`GraduateStudent` class -  
+```java
+public class GraduateStudent extends Student{
+    // This class has the highestCGPA of parent class
+}
+
+```
+`UAP` class with `setHighestCGPA()` static method -  
+```java
+public class UAP {
+    public static void setHighestCGPA(Student s){
+        if(s instanceof UnderGraduateStudent){
+            s.highestCGPA = 4.00;
+        }
+        else if(s instanceof GraduateStudent){
+            s.highestCGPA = 5.00;
+        }
+    }
+}
+```
+
+***(b)***  
+Errors in both the classes are -   
+1. In the `SouthEastBank` class, `b2` object has a parameter missing while calling constructor method.  
+2. In the `SouthEastBank` class, the transfer method has different spelling at 8th & 14th line.
+3. In the `SouthEastBank` class, the transfer method needed to be a static method but the static keyword is missing.
+4. In the `SouthEastBank` class, at 18th line the balance attribute is printed, but it is declared private. So balance can't be private anymore.  
+
+The Codes without errors -   
+`BankAccount` class -   
+```java
+package sp23final;
+public class BankAccount {
+    String name, accNum;
+    double balance;
+    public BankAccount(String name, String accNum, double bal){
+        this.name = name;
+        this.accNum = accNum;
+        this.balance = bal;
+    }
+    public void deposit(double amt){
+        balance += amt;
+    }
+    public void withdraw(double amt){
+        balance += amt;
+    }
+    public void display(){
+        System.out.println(this.name + " " + accNum + " " + balance);
+    }
+}
+
+```  
+`SouthEastBank` class -   
+```java
+package sp23final;
+public class SouthEastBank {
+    public static void main(String[] args) {
+        BankAccount b1 = new BankAccount("Mahi", "11111", 1000);
+        BankAccount b2 = new BankAccount("Arnob", "22222", 1000);
+        transfer(b1, b2, 500);
+        b1.display();
+        b2.display();
+    }
+    public static void transfer(BankAccount a1, BankAccount a2, double amt){
+        a1 = new BankAccount("Rafi", "33333", 2000);
+        a1.withdraw(amt);
+        a2.deposit(amt);
+        System.out.println(a2.balance);
+    }
+}
+```
+
 <h3 style="text-align:center;">Answer to the Question no 5</h3>  
 
 ***(a)***  
-
 ```java
 public class InvalidTemperatureRangeException extends Exception{
     public InvalidTemperatureRangeException(int minTemp, int maxTemp){
@@ -221,7 +305,7 @@ public class MultiThreadedProgram {
 ***(d)***
 ```java
 import java.io.*;
-public class BufferedReading {
+public class Spring_23_5_d {
     public static void main(String[] args) {
         try{
             FileReader fileReader = new FileReader("input.txt");
