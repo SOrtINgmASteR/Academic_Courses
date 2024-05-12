@@ -152,8 +152,123 @@ public class Car implements Engine {
 }
 ```
 
-<h3 style="text-align:center;">Answer to the Question no 4</h3>
-<h3 style="text-align:center;">Answer to the Question no 5</h3>
+<h3 style="text-align:center;">Answer to the Question no 4</h3>  
+
+***(a)***  
+Let,   
+`name = "Priom"`, `phnNo = 123456789` & `id = 34`  
+So,  
+index = id % 11 = 1  
+d = phoneNo.charAt(index) = '2' (in `phnNo` at 1 index = '2')  
+digit = Integer.parseInt(d) = 2  
+return 2 * digit = 4  
+
+***Output : 4***
+
+Let,   
+`name = "Tausif"`, `phnNo = 987654321` & `id = 12`  
+So,  
+index = id % 11 = 1  
+d = phoneNo.charAt(index) = '8' (in `phnNo` at 1 index = '8')  
+digit = Integer.parseInt(d) = 8  
+return 2 * digit = 16
+
+***Output : 16***
+
+***(b)***  
+The code has the following errors - 
+- In `main` method, at line 5 the object is directly printed. But it is invalid so a new method should be created for printing all the data.  
+- In `Student` class, it's constructor method has void return type, which is invalid.  
+- In `Student` class, `studentCount` variable is used in side a static method `increaseStudentCount()`. So the `studentCount` variable need to be static as the method `increaseStudentCount()`.  
+- In `Student` class, `univName` is final variable. But in `setUnivName()` method a new name has been assigned. So it can't be a final variable.
+Code without Error -  
+```java
+public class TestError {
+    public static void main(String[] args) {
+        Student s1 = new Student("Abir", "111", 3.5f);
+        Student s2 = new Student("Hasan", "111", 3.5f);
+        s1.printData();
+    }
+}
+
+class Student{
+    private String name, id;
+    private float cgpa;
+    public static String univName = "UAP";
+    public static int studentCount = 0;
+
+    public Student(String name, String id, float cgpa){
+        this.name = name;
+        this.id = id;
+        this.cgpa = cgpa;
+        studentCount++;
+    }
+    public static void increaseStudentCount(int incAmt){
+        studentCount += incAmt;
+    }
+    public static void setUnivName(String newName){
+        univName = newName;
+    }
+    public void printData(){
+        System.out.println("Name : " + name);
+        System.out.println("ID : " + id);
+        System.out.println("CGPA : " + cgpa);
+    }
+}
+```
+
+<h3 style="text-align:center;">Answer to the Question no 5</h3>  
+
+***(a)***  
+- For encapsulation of `Name` getter & setter methods need to be created  
+- For readonly feature for age only getter method need to be created.  
+- For overloaded `grow()` method, a new `grow()` method need to be created with a parameter.  
+
+```java
+public class Voter {
+    private String name;
+    private int age;
+
+    public Voter(String name, int age){
+        this.name = name;
+        this.age = age;
+    }
+    //Encapsulation for 'name'(getter & setter methods)
+    public void setName(String name){
+        this.name = name;
+    }
+    public String getName(){
+        return name;
+    }
+    //Read Only Feature for 'age'.
+    public int getAge(){
+        return age;
+    }
+    public void grow(){
+        age++;
+    }
+    //Overloaded grow method
+    public void grow(int increaseAge){
+        age += increaseAge;
+    }
+}
+```
+
+***(b)***  
+```java
+public class Main {
+    public static void main(String[] args) {
+        House house = new House(50, 90, 5);
+        int area = house.getArea();
+        System.out.println(area);
+
+        House.Room room = house.new Room(8, 7);
+        area = room.getArea();
+        System.out.println(area);
+    }
+}
+```
+
 <h3 style="text-align:center;">Answer to the Question no 6</h3>  
 
 ***(a)***
