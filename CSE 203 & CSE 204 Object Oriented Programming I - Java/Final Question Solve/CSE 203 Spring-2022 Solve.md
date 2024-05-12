@@ -173,6 +173,55 @@ public class FindError {
 
 <h3 style="text-align:center;">Answer to the Question no 5</h3>  
 
+***(a)***  
+```java
+public class OuterClass {
+    public int outerVar;
+    public OuterClass(int outerVar){
+        this.outerVar = outerVar;
+    }
+    public void outerMethod(){
+        InnerClass innerClass = new InnerClass(25);
+        System.out.println(innerClass.innerVar);
+        innerClass.innerMethod();
+    }
+    public class InnerClass{
+        public int innerVar;
+        public InnerClass(int innerVar){
+            this.innerVar = innerVar;
+        }
+        public void innerMethod(){
+            System.out.println(innerVar);
+        }
+    }
+    public static void main(String [] args){
+        OuterClass outerClass = new OuterClass(60);
+        OuterClass.InnerClass innerClass = outerClass.new InnerClass(100);
+        innerClass.innerMethod();
+    }
+}
+```
+***(b)***  
+As FileNotFoundException is a subclass of IOException, we catch FileNotFoundException in the first catch statement & IOException in the second catch statement.
+```java
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+public class TestThread {
+    public static void main(String[] args) {
+        try{
+            FileReader fileReader = new FileReader("test.txt");
+        }
+        catch (FileNotFoundException e){
+            System.out.println("FileNotFoundException");
+        }
+        catch (IOException e){
+            System.out.println("IOException.");
+        }
+    }
+}
+```  
+
 <h3 style="text-align:center;">Answer to the Question no 6</h3>  
 
 **(a)**  
@@ -184,7 +233,28 @@ public class LowAttendanceException extends Exception{
 }
 ```
 **OR - (a)**  
+We can do some changes in `Device` class to get rid of the errors - 
+```java
+public class Device implements Comparable<Device> {
+    String name, category;
+    int price;
 
+    public Device(String name, String category, int price) {
+        this.name = name;
+        this.category = category;
+        this.price = price;
+    }
+
+    public void display() {
+        System.out.printf("%s:%s:%d\n", name, category, price);
+    }
+
+    @Override
+    public int compareTo(Device otherDevice) {
+        return Integer.compare(this.price, otherDevice.price);
+    }
+}
+```
 
 **(b)**  
 Thread Class -
@@ -226,7 +296,7 @@ public class MultiThreadedProgram {
 **OR - (b)**  
 ```java
 import java.io.*;
-public class BufferedReading {
+public class Main {
     public static void main(String[] args) {
         try{
             FileReader fileReader = new FileReader("voters.txt");
