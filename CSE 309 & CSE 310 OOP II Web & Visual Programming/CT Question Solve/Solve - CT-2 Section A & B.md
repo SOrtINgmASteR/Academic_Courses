@@ -49,7 +49,7 @@ def is_palindrome(s):
 ### Answer to the Question no 2
 
 - In the method we take two parameter `marks` & `name`. 
-- We initialized the value of `name`=student incase the name is not provided.
+- We initialized the value of `name`="student" incase the name is not provided.
 - The we calculated the average mark, formatted a string & returned the string.
 
 
