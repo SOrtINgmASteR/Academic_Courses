@@ -32,4 +32,33 @@ def remove_duplicates(s):
 ```
 
 
-# CT - 2 Section A 
+# CT - 2 Section B  
+
+### Answer to the Question no 1
+
+- [::-1] will reverse a string.
+- Because starts from 0th to last index in reverse order.
+- If the reverse of the string is similar to the original string, then it is a palindrome.
+
+```python
+def is_palindrome(s):
+    s_reverse = s[::-1]
+    return s == s_reverse
+```
+
+### Answer to the Question no 2
+
+- In the method we take two parameter `marks` & `name`. 
+- We initialized the value of `name`=student incase the name is not provided.
+- The we calculated the average mark, formatted a string & returned the string.
+
+
+```python
+def student_average(marks, name = "student"):
+    total_mark = 0
+    for mark in marks:
+        total_mark += mark
+    average_mark = total_mark / len(marks)
+    formatted_string = f"{name}'s average mark is {average_mark}."
+    return formatted_string
+```
