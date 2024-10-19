@@ -8,19 +8,16 @@
 def fun(*numbers):
     sum = 0
     avg = 0
-    x = []
     for n in numbers:
         sum += n
     avg = sum / len(numbers)
-    x.append(sum)
-    x.append(avg)
-    return x
+    return sum, avg
 
-x = fun(1, 2, 3, 4)
-print(f"Sum: {x[0]} Avg: {x[1]}")
+sum, avg = fun(1, 2, 3, 4)
+print(f"Sum: {sum} Avg: {avg}")
 
-x = fun(1, 2, 3, 4, 5, 6)
-print(f"Sum: {x[0]} Avg: {x[1]}")
+sum, avg = fun(1, 2, 3, 4, 5, 6)
+print(f"Sum: {sum} Avg: {avg}")
 ```  
 
 **(b)**  

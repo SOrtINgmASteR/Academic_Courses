@@ -91,4 +91,37 @@ def count_vowels(my_string):
 # CT - 1 Section B 
 
 
-### Answer to Question no 1
+### Answer to Question no 1  
+
+- The function typecast the list in to set & then again into list.
+- The set stores the unique elements.
+- Then calculates the sum & average of the unique elements. 
+
+```python
+def unique_average_summation(number_list):
+    unique_list = list(set(number_list))
+    unique_sum = 0
+    unique_avg = 0
+    for n in unique_list:
+        unique_sum += n
+    unique_avg = unique_sum / len(number_list)
+    return unique_list, unique_sum, unique_avg
+```
+
+### Answer to Question no 2  
+
+1. [start:stop:step]
+2. start defaults to 0
+3. stop defaults to the length of the sequence
+4. step defaults to 1
+5. If start is too large the slice will return an empty sequence.
+6. If stop is too large python will slice up to the end of the sequence without error.
+
+```python
+s='hello world'
+print(s[::-3])          # No error 2 & 3
+print(s[-3:99:-1])      # No error 6
+print(s[-5:0:1])        # No error 
+print(s[-45:999:])      # No error 5 & 6
+print(s[::]             # Error Syntax error ')' is missing
+```
