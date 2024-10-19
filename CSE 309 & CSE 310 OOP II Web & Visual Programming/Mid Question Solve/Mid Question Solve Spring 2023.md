@@ -26,7 +26,7 @@ HTML code for the Following Form-
     <br>
     
     <label>Comment: </label>
-    <textarea name="" id=""></textarea>
+    <textarea></textarea>
     <br>
     
     <!Radio Buttons>
