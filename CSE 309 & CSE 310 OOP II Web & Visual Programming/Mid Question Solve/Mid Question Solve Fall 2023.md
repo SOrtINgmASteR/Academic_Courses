@@ -1,8 +1,9 @@
 # CSE 309 - Fall 2023
 
-### Answer to the Question no 1
+### Answer to the Question no 1  
 
 **(a)**:  
+
 ```python
 def fun(*numbers):
     sum = 0
@@ -23,6 +24,7 @@ print(f"Sum: {x[0]} Avg: {x[1]}")
 ```  
 
 **(b)**  
+
 ```python
 my_list = [1, 2, 3, 4 ,5 ,6 ,7, 8, 9, 10]
 output = my_list[-2:-9:-2]
@@ -45,7 +47,6 @@ print(addition)
 
 - Here `i` iterates over the `output` list and adds the elements of the list when it's divisible by 2
 - so `addition` = 0. Because no element of the output list is divisible by 2.  
-
 
 ### Answer to the Question no 2
 
@@ -74,7 +75,6 @@ Corresponding HTML code for the given table-
     </tr>
 </table>
 ```  
-
 
 ### Answer to the Question no 3  
 
