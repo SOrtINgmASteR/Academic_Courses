@@ -53,6 +53,7 @@ def remove_duplicate(number_list):
 - In the Second approach we will take a list as parameter.
 - Then we declare a empty list, & start traversing the given list.
 - If any element is not found in the empty list, we will append the the element in the empty list.
+- This won't change the order of the list.
   
 ```python
 def remove_duplicate(number_list):
