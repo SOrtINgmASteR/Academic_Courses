@@ -59,7 +59,7 @@ list = [1, 2, 3, 4, 5]       # list = [1, 2, 3, 4, 5]
 print(list[-1])              # 5 (list[-1] => 5)
 list.append(6)               # 6 will be added to last so, list = [1, 2, 3, 4, 5, 6]
 print(list)                  # [1, 2, 3, 4, 5, 6]
-list.insert(2, 7)            # 7 will be inserted in the 2nd index os, list = [1, 2, 7, 3, 4, 5, 6]
+list.insert(2, 7)            # 7 will be inserted in the 2nd index so, list = [1, 2, 7, 3, 4, 5, 6]
 print(list)                  # [1, 2, 7, 3, 4, 5, 6]
 list.pop()                   # the last element 6 will be removed so, list = [1, 2, 7, 3, 4, 5]
 print(list)                  # [1, 2, 7, 3, 4, 5]
