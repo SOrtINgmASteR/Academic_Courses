@@ -112,11 +112,11 @@ def unique_average_summation(number_list):
 ### Answer to Question no 2  
 
 1. [start:stop:step]
-2. start defaults to 0
-3. stop defaults to the length of the sequence
-4. step defaults to 1
-5. If start is too large the slice will return an empty sequence.
-6. If stop is too large python will slice up to the end of the sequence without error.
+2. `start` defaults to 0
+3. `stop` defaults to the length of the sequence
+4. `step` defaults to 1
+5. If `start` is too large the slice will return an empty sequence.
+6. If `stop` is too large python will slice up to the end of the sequence without error.
 
 ```python
 s='hello world'
@@ -124,5 +124,5 @@ print(s[::-3])          # No error 2 & 3
 print(s[-3:99:-1])      # No error 6
 print(s[-5:0:1])        # No error 
 print(s[-45:999:])      # No error 5 & 6
-print(s[::]             # Error Syntax error ')' is missing
+print(s[::]             # Error: Syntax error ')' is missing
 ```
