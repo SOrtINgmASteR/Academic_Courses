@@ -1,0 +1,12 @@
+| Node/Path      | h(n) | g(n) | f(n) | Open Fring                                                                                       | Close Fring                  |
+|----------------|------|------|------|--------------------------------------------------------------------------------------------------|------------------------------|
+| Home           | 33   | 0    | 33   | Tenary_Mor(28), Shre-e_bangla_road(35), Mohammed_Pur(47)                                         | Home                         |
+| Tenary_Mor     | 19   | 9    | 28   | Jhigatola(37), Shre-e_bangla_road(35), Mohammed_Pur(47)                                          | Home, Tenary_Mor             |
+| Shre-e_bangla_road | 28 | 7  | 35   | Jhigatola(37), Modhu_Bazar(33), Mohammed_Pur(47)                                                 | Home, Tenary_Mor, Shre-e_bangla_road |
+| Modhu_Bazar    | 26   | 12   | 38   | Jhigatola(37), Abahoni_Math(32), Mohammed_Pur(47)                                                | Home, Tenary_Mor, Shre-e_bangla_road, Modhu_Bazar |
+| Abahoni_Math   | 20   | 24   | 44   | Jhigatola(37), 32_No(37), 8_No_Bridge(39), Mohammed_Pur(47)                                      | Home, Tenary_Mor, Shre-e_bangla_road, Modhu_Bazar, Abahoni_Math |
+| 32_No          | 13   | 41   | 54   | Jhigatola(37), 8_No_Bridge(39), Panthopoth(51), Mohammed_Pur(47)                                 | Home, Tenary_Mor, Shre-e_bangla_road, Modhu_Bazar, Abahoni_Math, 32_No |
+| Jhigatola      | 28   | 18   | 46   | Science_Lab(29), 8_No_Bridge(30), Panthopoth(51), Mohammed_Pur(47)                               | Home, Tenary_Mor, Shre-e_bangla_road, Modhu_Bazar, Abahoni_Math, 32_No, Jhigatola |
+| Science_Lab    | 17   | 29   | 46   | Panthopoth(42), Kola_Baghan(37), 8_No_Bridge(30), Mohammed_Pur(47)                               | Home, Tenary_Mor, Shre-e_bangla_road, Modhu_Bazar, Abahoni_Math, 32_No, Jhigatola, Science_Lab |
+| Panthopoth     | 4    | 42   | 46   | UAP(46), Kola_Baghan(51), 8_No_Bridge(30), Mohammed_Pur(47)                                      | Home, Tenary_Mor, Shre-e_bangla_road, Modhu_Bazar, Abahoni_Math, 32_No, Jhigatola, Science_Lab, Panthopoth |
+| UAP            | 0    | 46   | 46   | Kola_Baghan(51), 8_No_Bridge(30), Mohammed_Pur(47)                                               | Home, Tenary_Mor, Shre-e_bangla_road, Modhu_Bazar, Abahoni_Math, 32_No, Jhigatola, Science_Lab, Panthopoth, UAP |
