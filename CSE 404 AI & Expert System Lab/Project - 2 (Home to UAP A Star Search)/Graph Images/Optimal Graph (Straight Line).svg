@@ -1,0 +1,248 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="714pt" height="642pt" viewBox="0.00 0.00 713.60 641.60">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 637.6)">
+<title>G</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-637.6 709.6,-637.6 709.6,4 -4,4"/>
+<!-- Home -->
+<g id="node1" class="node">
+<title>Home</title>
+<ellipse fill="lightblue" stroke="black" cx="244.8" cy="-604.8" rx="28.8" ry="28.8"/>
+<text text-anchor="middle" x="244.8" y="-608.4" font-family="FiraCode" font-size="12.00">Home</text>
+<text text-anchor="middle" x="244.8" y="-594" font-family="FiraCode" font-size="12.00">h=33</text>
+</g>
+<!-- Shre_e_bangla_road -->
+<g id="node2" class="node">
+<title>Shre_e_bangla_road</title>
+<ellipse fill="lightgray" stroke="black" cx="100.8" cy="-460.8" rx="28.8" ry="28.8"/>
+<text text-anchor="middle" x="100.8" y="-471.6" font-family="FiraCode" font-size="12.00">Shre_e_bangla</text>
+<text text-anchor="middle" x="100.8" y="-457.2" font-family="FiraCode" font-size="12.00">Road</text>
+<text text-anchor="middle" x="100.8" y="-442.8" font-family="FiraCode" font-size="12.00">h=28</text>
+</g>
+<!-- Home&#45;&gt;Shre_e_bangla_road -->
+<g id="edge1" class="edge">
+<title>Home-&gt;Shre_e_bangla_road</title>
+<path fill="none" stroke="black" d="M224.17,-584.17C199.25,-559.25 157.21,-517.21 129.24,-489.24"/>
+<polygon fill="black" stroke="black" points="132.01,-487.06 122.46,-482.46 127.06,-492.01 132.01,-487.06"/>
+<text text-anchor="middle" x="168.88" y="-537.13" font-family="FiraCode" font-size="15.00">7</text>
+</g>
+<!-- Mohammed_Pur -->
+<g id="node8" class="node">
+<title>Mohammed_Pur</title>
+<ellipse fill="lightgray" stroke="black" cx="460.8" cy="-604.8" rx="28.8" ry="28.8"/>
+<text text-anchor="middle" x="460.8" y="-608.4" font-family="FiraCode" font-size="12.00">Mohammed_Pur</text>
+<text text-anchor="middle" x="460.8" y="-594" font-family="FiraCode" font-size="12.00">h=29</text>
+</g>
+<!-- Home&#45;&gt;Mohammed_Pur -->
+<g id="edge7" class="edge">
+<title>Home-&gt;Mohammed_Pur</title>
+<path fill="none" stroke="black" d="M273.93,-604.8C311.72,-604.8 377.83,-604.8 420.44,-604.8"/>
+<polygon fill="black" stroke="black" points="420.27,-608.3 430.27,-604.8 420.27,-601.3 420.27,-608.3"/>
+<text text-anchor="middle" x="345.36" y="-609.3" font-family="FiraCode" font-size="15.00">18</text>
+</g>
+<!-- Tenary_Mor -->
+<g id="node11" class="node">
+<title>Tenary_Mor</title>
+<ellipse fill="lightgreen" stroke="black" cx="352.8" cy="-496.8" rx="28.8" ry="28.8"/>
+<text text-anchor="middle" x="352.8" y="-500.4" font-family="FiraCode" font-size="12.00">Tenary_Mor</text>
+<text text-anchor="middle" x="352.8" y="-486" font-family="FiraCode" font-size="12.00">h=19</text>
+</g>
+<!-- Home&#45;&gt;Tenary_Mor -->
+<g id="edge11" class="edge">
+<title>Home-&gt;Tenary_Mor</title>
+<path fill="none" stroke="black" d="M265.37,-584.23C282.03,-567.57 305.7,-543.9 324.21,-525.39"/>
+<polygon fill="black" stroke="black" points="326.64,-527.91 331.24,-518.36 321.69,-522.96 326.64,-527.91"/>
+<text text-anchor="middle" x="295.19" y="-555.16" font-family="FiraCode" font-size="15.00">9</text>
+</g>
+<!-- Modhu_Bazar -->
+<g id="node3" class="node">
+<title>Modhu_Bazar</title>
+<ellipse fill="lightgray" stroke="black" cx="64.8" cy="-316.8" rx="28.8" ry="28.8"/>
+<text text-anchor="middle" x="64.8" y="-320.4" font-family="FiraCode" font-size="12.00">Modhu_Bazar</text>
+<text text-anchor="middle" x="64.8" y="-306" font-family="FiraCode" font-size="12.00">h=26</text>
+</g>
+<!-- Shre_e_bangla_road&#45;&gt;Modhu_Bazar -->
+<g id="edge2" class="edge">
+<title>Shre_e_bangla_road-&gt;Modhu_Bazar</title>
+<path fill="none" stroke="black" d="M93.77,-432.69C88.3,-410.79 80.63,-380.12 74.56,-355.83"/>
+<polygon fill="black" stroke="black" points="78,-355.16 72.18,-346.3 71.21,-356.85 78,-355.16"/>
+<text text-anchor="middle" x="79.06" y="-393.34" font-family="FiraCode" font-size="15.00">5</text>
+</g>
+<!-- Abahoni_Math -->
+<g id="node4" class="node">
+<title>Abahoni_Math</title>
+<ellipse fill="lightgray" stroke="black" cx="28.8" cy="-172.8" rx="28.8" ry="28.8"/>
+<text text-anchor="middle" x="28.8" y="-183.6" font-family="FiraCode" font-size="12.00">Abahoni</text>
+<text text-anchor="middle" x="28.8" y="-169.2" font-family="FiraCode" font-size="12.00">Math</text>
+<text text-anchor="middle" x="28.8" y="-154.8" font-family="FiraCode" font-size="12.00">h=20</text>
+</g>
+<!-- Modhu_Bazar&#45;&gt;Abahoni_Math -->
+<g id="edge3" class="edge">
+<title>Modhu_Bazar-&gt;Abahoni_Math</title>
+<path fill="none" stroke="black" d="M57.77,-288.69C52.3,-266.79 44.63,-236.12 38.56,-211.83"/>
+<polygon fill="black" stroke="black" points="42,-211.16 36.18,-202.3 35.21,-212.85 42,-211.16"/>
+<text text-anchor="middle" x="39.31" y="-249.34" font-family="FiraCode" font-size="15.00">12</text>
+</g>
+<!-- Dhanmond_32_No -->
+<g id="node5" class="node">
+<title>Dhanmond_32_No</title>
+<ellipse fill="lightgray" stroke="black" cx="244.8" cy="-28.8" rx="28.8" ry="28.8"/>
+<text text-anchor="middle" x="244.8" y="-39.6" font-family="FiraCode" font-size="12.00">Dhanmond</text>
+<text text-anchor="middle" x="244.8" y="-25.2" font-family="FiraCode" font-size="12.00">32_No</text>
+<text text-anchor="middle" x="244.8" y="-10.8" font-family="FiraCode" font-size="12.00">h=13</text>
+</g>
+<!-- Abahoni_Math&#45;&gt;Dhanmond_32_No -->
+<g id="edge4" class="edge">
+<title>Abahoni_Math-&gt;Dhanmond_32_No</title>
+<path fill="none" stroke="black" d="M53.16,-156.56C91.83,-130.78 167.36,-80.43 211.17,-51.22"/>
+<polygon fill="black" stroke="black" points="212.89,-54.28 219.27,-45.82 209.01,-48.45 212.89,-54.28"/>
+<text text-anchor="middle" x="130.74" y="-104.44" font-family="FiraCode" font-size="12.00">17</text>
+</g>
+<!-- Dhanmondi_8_No_Bridge -->
+<g id="node14" class="node">
+<title>Dhanmondi_8_No_Bridge</title>
+<ellipse fill="lightgray" stroke="black" cx="172.8" cy="-172.8" rx="28.8" ry="28.8"/>
+<text text-anchor="middle" x="172.8" y="-183.6" font-family="FiraCode" font-size="12.00">Dhanmondi</text>
+<text text-anchor="middle" x="172.8" y="-169.2" font-family="FiraCode" font-size="12.00">8_No_Bridge</text>
+<text text-anchor="middle" x="172.8" y="-154.8" font-family="FiraCode" font-size="12.00">h=15</text>
+</g>
+<!-- Abahoni_Math&#45;&gt;Dhanmondi_8_No_Bridge -->
+<g id="edge15" class="edge">
+<title>Abahoni_Math-&gt;Dhanmondi_8_No_Bridge</title>
+<path fill="none" stroke="black" d="M57.94,-172.8C79.31,-172.8 108.61,-172.8 132.26,-172.8"/>
+<polygon fill="black" stroke="black" points="132.19,-176.3 142.19,-172.8 132.19,-169.3 132.19,-176.3"/>
+<text text-anchor="middle" x="93.44" y="-177.3" font-family="FiraCode" font-size="15.00">11</text>
+</g>
+<!-- Panthopoth -->
+<g id="node6" class="node">
+<title>Panthopoth</title>
+<ellipse fill="lightgreen" stroke="black" cx="532.8" cy="-28.8" rx="28.8" ry="28.8"/>
+<text text-anchor="middle" x="532.8" y="-32.4" font-family="FiraCode" font-size="12.00">Panthopoth</text>
+<text text-anchor="middle" x="532.8" y="-18" font-family="FiraCode" font-size="12.00">h=4</text>
+</g>
+<!-- Dhanmond_32_No&#45;&gt;Panthopoth -->
+<g id="edge5" class="edge">
+<title>Dhanmond_32_No-&gt;Panthopoth</title>
+<path fill="none" stroke="black" d="M274,-28.8C325.64,-28.8 433.18,-28.8 492.08,-28.8"/>
+<polygon fill="black" stroke="black" points="492.01,-32.3 502.01,-28.8 492.01,-25.3 492.01,-32.3"/>
+<text text-anchor="middle" x="381.41" y="-33.3" font-family="FiraCode" font-size="15.00">10</text>
+</g>
+<!-- UAP -->
+<g id="node7" class="node">
+<title>UAP</title>
+<ellipse fill="lightcoral" stroke="black" cx="676.8" cy="-28.8" rx="28.8" ry="28.8"/>
+<text text-anchor="middle" x="676.8" y="-32.4" font-family="FiraCode" font-size="12.00">UAP</text>
+<text text-anchor="middle" x="676.8" y="-18" font-family="FiraCode" font-size="12.00">h=0</text>
+</g>
+<!-- Panthopoth&#45;&gt;UAP -->
+<g id="edge6" class="edge">
+<title>Panthopoth-&gt;UAP</title>
+<path fill="none" stroke="black" d="M561.94,-28.8C583.31,-28.8 612.61,-28.8 636.26,-28.8"/>
+<polygon fill="black" stroke="black" points="636.19,-32.3 646.19,-28.8 636.19,-25.3 636.19,-32.3"/>
+<text text-anchor="middle" x="601.19" y="-33.3" font-family="FiraCode" font-size="15.00">4</text>
+</g>
+<!-- Khamar_Bari -->
+<g id="node9" class="node">
+<title>Khamar_Bari</title>
+<ellipse fill="lightgray" stroke="black" cx="676.8" cy="-460.8" rx="28.8" ry="28.8"/>
+<text text-anchor="middle" x="676.8" y="-464.4" font-family="FiraCode" font-size="12.00">Khamar_Bari</text>
+<text text-anchor="middle" x="676.8" y="-450" font-family="FiraCode" font-size="12.00">h=5</text>
+</g>
+<!-- Mohammed_Pur&#45;&gt;Khamar_Bari -->
+<g id="edge8" class="edge">
+<title>Mohammed_Pur-&gt;Khamar_Bari</title>
+<path fill="none" stroke="black" d="M485.16,-588.56C523.83,-562.78 599.36,-512.43 643.17,-483.22"/>
+<polygon fill="black" stroke="black" points="644.89,-486.28 651.27,-477.82 641.01,-480.45 644.89,-486.28"/>
+<text text-anchor="middle" x="561.24" y="-537.34" font-family="FiraCode" font-size="15.00">25</text>
+</g>
+<!-- Farm_Gate -->
+<g id="node10" class="node">
+<title>Farm_Gate</title>
+<ellipse fill="lightgray" stroke="black" cx="676.8" cy="-244.8" rx="28.8" ry="28.8"/>
+<text text-anchor="middle" x="676.8" y="-248.4" font-family="FiraCode" font-size="12.00">Farm_Gate</text>
+<text text-anchor="middle" x="676.8" y="-234" font-family="FiraCode" font-size="12.00">h=3</text>
+</g>
+<!-- Khamar_Bari&#45;&gt;Farm_Gate -->
+<g id="edge9" class="edge">
+<title>Khamar_Bari-&gt;Farm_Gate</title>
+<path fill="none" stroke="black" d="M676.8,-431.67C676.8,-393.88 676.8,-327.77 676.8,-285.16"/>
+<polygon fill="black" stroke="black" points="680.3,-285.33 676.8,-275.33 673.3,-285.33 680.3,-285.33"/>
+<text text-anchor="middle" x="669.3" y="-357.24" font-family="FiraCode" font-size="15.00">12</text>
+</g>
+<!-- Farm_Gate&#45;&gt;UAP -->
+<g id="edge10" class="edge">
+<title>Farm_Gate-&gt;UAP</title>
+<path fill="none" stroke="black" d="M676.8,-215.67C676.8,-177.88 676.8,-111.77 676.8,-69.16"/>
+<polygon fill="black" stroke="black" points="680.3,-69.33 676.8,-59.33 673.3,-69.33 680.3,-69.33"/>
+<text text-anchor="middle" x="673.05" y="-141.24" font-family="FiraCode" font-size="15.00">3</text>
+</g>
+<!-- Jhigatola -->
+<g id="node12" class="node">
+<title>Jhigatola</title>
+<ellipse fill="lightgreen" stroke="black" cx="352.8" cy="-352.8" rx="28.8" ry="28.8"/>
+<text text-anchor="middle" x="352.8" y="-356.4" font-family="FiraCode" font-size="12.00">Jhigatola</text>
+<text text-anchor="middle" x="352.8" y="-342" font-family="FiraCode" font-size="12.00">h=28</text>
+</g>
+<!-- Tenary_Mor&#45;&gt;Jhigatola -->
+<g id="edge12" class="edge">
+<title>Tenary_Mor-&gt;Jhigatola</title>
+<path fill="none" stroke="black" d="M352.8,-467.66C352.8,-446.29 352.8,-416.99 352.8,-393.34"/>
+<polygon fill="black" stroke="black" points="356.3,-393.41 352.8,-383.41 349.3,-393.41 356.3,-393.41"/>
+<text text-anchor="middle" x="349.05" y="-429.16" font-family="FiraCode" font-size="15.00">9</text>
+</g>
+<!-- Science_Lab -->
+<g id="node13" class="node">
+<title>Science_Lab</title>
+<ellipse fill="lightgreen" stroke="black" cx="532.8" cy="-388.8" rx="28.8" ry="28.8"/>
+<text text-anchor="middle" x="532.8" y="-392.4" font-family="FiraCode" font-size="12.00">Science_Lab</text>
+<text text-anchor="middle" x="532.8" y="-378" font-family="FiraCode" font-size="12.00">h=17</text>
+</g>
+<!-- Jhigatola&#45;&gt;Science_Lab -->
+<g id="edge13" class="edge">
+<title>Jhigatola-&gt;Science_Lab</title>
+<path fill="none" stroke="black" d="M381.32,-358.5C411.51,-364.54 459.39,-374.12 493.22,-380.88"/>
+<polygon fill="black" stroke="black" points="492.14,-384.24 502.63,-382.77 493.51,-377.37 492.14,-384.24"/>
+<text text-anchor="middle" x="434.97" y="-375.23" font-family="FiraCode" font-size="15.00">11</text>
+</g>
+<!-- Jhigatola&#45;&gt;Dhanmondi_8_No_Bridge -->
+<g id="edge18" class="edge">
+<title>Jhigatola-&gt;Dhanmondi_8_No_Bridge</title>
+<path fill="none" stroke="black" d="M332.15,-332.15C299.96,-299.96 237.72,-237.72 201.28,-201.28"/>
+<polygon fill="black" stroke="black" points="204.1,-199.15 194.55,-194.55 199.15,-204.1 204.1,-199.15"/>
+<text text-anchor="middle" x="255.43" y="-267.43" font-family="FiraCode" font-size="15.00">12</text>
+</g>
+<!-- Science_Lab&#45;&gt;Panthopoth -->
+<g id="edge14" class="edge">
+<title>Science_Lab-&gt;Panthopoth</title>
+<path fill="none" stroke="black" d="M532.8,-359.64C532.8,-295.66 532.8,-142.83 532.8,-69.46"/>
+<polygon fill="black" stroke="black" points="536.3,-69.49 532.8,-59.49 529.3,-69.49 536.3,-69.49"/>
+<text text-anchor="middle" x="525.3" y="-213.48" font-family="FiraCode" font-size="15.00">13</text>
+</g>
+<!-- Kola_Baghan -->
+<g id="node15" class="node">
+<title>Kola_Baghan</title>
+<ellipse fill="lightgray" stroke="black" cx="388.8" cy="-172.8" rx="28.8" ry="28.8"/>
+<text text-anchor="middle" x="388.8" y="-176.4" font-family="FiraCode" font-size="12.00">Kola_Baghan</text>
+<text text-anchor="middle" x="388.8" y="-162" font-family="FiraCode" font-size="12.00">h=11</text>
+</g>
+<!-- Science_Lab&#45;&gt;Kola_Baghan -->
+<g id="edge19" class="edge">
+<title>Science_Lab-&gt;Kola_Baghan</title>
+<path fill="none" stroke="black" d="M516.56,-364.44C490.78,-325.77 440.43,-250.24 411.22,-206.43"/>
+<polygon fill="black" stroke="black" points="414.28,-204.71 405.82,-198.33 408.45,-208.59 414.28,-204.71"/>
+<text text-anchor="middle" x="457.09" y="-285.36" font-family="FiraCode" font-size="15.00">8</text>
+</g>
+<!-- Dhanmondi_8_No_Bridge&#45;&gt;Kola_Baghan -->
+<g id="edge16" class="edge">
+<title>Dhanmondi_8_No_Bridge-&gt;Kola_Baghan</title>
+<path fill="none" stroke="black" d="M201.93,-172.8C239.72,-172.8 305.83,-172.8 348.44,-172.8"/>
+<polygon fill="black" stroke="black" points="348.27,-176.3 358.27,-172.8 348.27,-169.3 348.27,-176.3"/>
+<text text-anchor="middle" x="277.11" y="-177.3" font-family="FiraCode" font-size="15.00">4</text>
+</g>
+<!-- Kola_Baghan&#45;&gt;Panthopoth -->
+<g id="edge17" class="edge">
+<title>Kola_Baghan-&gt;Panthopoth</title>
+<path fill="none" stroke="black" d="M409.43,-152.17C434.35,-127.25 476.39,-85.21 504.36,-57.24"/>
+<polygon fill="black" stroke="black" points="506.54,-60.01 511.14,-50.46 501.59,-55.06 506.54,-60.01"/>
+<text text-anchor="middle" x="457.22" y="-105.13" font-family="FiraCode" font-size="15.00">9</text>
+</g>
+</g>
+</svg>
