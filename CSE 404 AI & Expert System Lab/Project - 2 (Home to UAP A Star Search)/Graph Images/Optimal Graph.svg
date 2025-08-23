@@ -15,7 +15,7 @@
 <ellipse fill="lightgray" stroke="black" cx="100.8" cy="-460.8" rx="28.8" ry="28.8"/>
 <text text-anchor="middle" x="100.8" y="-471.6" font-family="FiraCode" font-size="12.00">Shre_e_bangla</text>
 <text text-anchor="middle" x="100.8" y="-457.2" font-family="FiraCode" font-size="12.00">Road</text>
-<text text-anchor="middle" x="100.8" y="-442.8" font-family="FiraCode" font-size="12.00">h=48</text>
+<text text-anchor="middle" x="100.8" y="-442.8" font-family="FiraCode" font-size="12.00">h=45</text>
 </g>
 <!-- Home&#45;&gt;Shre_e_bangla_road -->
 <g id="edge1" class="edge">
@@ -57,7 +57,7 @@
 <title>Modhu_Bazar</title>
 <ellipse fill="lightgray" stroke="black" cx="64.8" cy="-316.8" rx="28.8" ry="28.8"/>
 <text text-anchor="middle" x="64.8" y="-320.4" font-family="FiraCode" font-size="12.00">Modhu_Bazar</text>
-<text text-anchor="middle" x="64.8" y="-306" font-family="FiraCode" font-size="12.00">h=43</text>
+<text text-anchor="middle" x="64.8" y="-306" font-family="FiraCode" font-size="12.00">h=40</text>
 </g>
 <!-- Shre_e_bangla_road&#45;&gt;Modhu_Bazar -->
 <g id="edge2" class="edge">
@@ -72,7 +72,7 @@
 <ellipse fill="lightgray" stroke="black" cx="28.8" cy="-172.8" rx="28.8" ry="28.8"/>
 <text text-anchor="middle" x="28.8" y="-183.6" font-family="FiraCode" font-size="12.00">Abahoni</text>
 <text text-anchor="middle" x="28.8" y="-169.2" font-family="FiraCode" font-size="12.00">Math</text>
-<text text-anchor="middle" x="28.8" y="-154.8" font-family="FiraCode" font-size="12.00">h=31</text>
+<text text-anchor="middle" x="28.8" y="-154.8" font-family="FiraCode" font-size="12.00">h=28</text>
 </g>
 <!-- Modhu_Bazar&#45;&gt;Abahoni_Math -->
 <g id="edge3" class="edge">
