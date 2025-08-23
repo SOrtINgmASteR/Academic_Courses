@@ -1,4 +1,4 @@
-# A Star Implementation (Heuristic Value = Minimum Cost)
+# A Star Implementation (Heuristic Value = Straight Line Cost)
 import heapq
 # Graph as adjacency list
 graph = {
