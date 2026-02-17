@@ -1,0 +1,11 @@
+/* Multi Line Comment
+Second Line of Comment
+*/
+void main()
+{
+    int a = 20, b, c;
+    float x = 10.5, y;
+    // Comment
+    a = b * c + 10;
+    if (a != 2) a = 0; 
+}
