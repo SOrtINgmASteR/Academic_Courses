@@ -33,3 +33,18 @@ print(output)
 text = "int a = 10; auto apple"
 output = re.findall(r'\ba\w*', text)
 print(output)
+
+# Find all the parenthesis in a string
+text = "int main() { return 0; }"
+output = re.findall(r'[\(\)\{\}\[\]]', text)
+print(output)
+
+# Find all the logical operators in a string
+text = "if (a > 10 && b < 20) { return a != b; } else { return b < 20; }"
+output = re.findall(r'&&|\|\||!=|<=|>=|==|!|<|>', text)
+print(output)
+
+# Find all the arithmetic operators in a string
+text = "a+=10; b-=5; c*=2; d /= 4; e++; f--; a = b + c"
+output = re.findall(r'\+\+|--|\+=|-=|\*=|/=|\+|-|\*|/|=', text)
+print(output)
