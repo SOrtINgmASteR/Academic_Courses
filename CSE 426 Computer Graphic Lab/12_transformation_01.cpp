@@ -1,4 +1,4 @@
-// Transformations (Scale, Rotate, Translate) - Modular
+// Transformations (Scale, Rotate, Translate)
 #include <GL/freeglut.h>
 #include <GL/glut.h>
 #include <bits/stdc++.h>

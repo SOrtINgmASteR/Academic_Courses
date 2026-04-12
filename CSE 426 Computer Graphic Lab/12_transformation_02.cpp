@@ -1,4 +1,4 @@
-// Transformations (Scale, Rotate, Translate) - Fixed
+// Transformations (Scale, Rotate, Translate)
 #include <GL/freeglut.h>
 #include <GL/glut.h>
 #include <cmath>

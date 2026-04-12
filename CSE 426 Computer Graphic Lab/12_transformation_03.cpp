@@ -1,4 +1,4 @@
-// Transformations (Scale, Rotate, Translate) + Undo
+// Transformations (Scale, Rotate, Translate) + Undo + Reset
 #include <GL/freeglut.h>
 #include <GL/glut.h>
 #include <bits/stdc++.h>
