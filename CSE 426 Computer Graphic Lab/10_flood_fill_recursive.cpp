@@ -24,7 +24,7 @@ void getPixel(int x, int y, float color[3]) {
 void flood_fill(int x, int y, float old_color[3], float new_color[3])  { 
     float color[3];  
     getPixel(x, y, color);  
-    if (color[0] == old_color[0] && (color[1]) == old_color[1] && (color[2]) ==  old_color[2]) { 
+    if ((color[0] == old_color[0]) && (color[1] == old_color[1]) && (color[2] == old_color[2])) { 
       setPixel(x, y, new_color);  
           flood_fill(x + 1, y, old_color, new_color);  
           flood_fill(x - 1, y, old_color, new_color);  
