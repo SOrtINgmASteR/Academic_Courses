@@ -1,0 +1,20 @@
+Direct left recursions:
+
+E -> E+T | T
+
+T -> T*F | F
+
+A -> Ac | Aad | bd | c
+
+E -> E+E | E*E | a
+
+
+Indirect left recursions:
+
+S -> x | y
+A -> Sa | Bf | m
+B -> Ab | Sc | n
+
+A -> Ba | d
+B -> Cb | g
+C -> Ac | F
