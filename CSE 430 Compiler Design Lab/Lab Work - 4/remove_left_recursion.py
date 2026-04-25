@@ -20,7 +20,7 @@ def read_grammar(filename):
             # print(f"Productions for {left}: {grammar[left]}")
     return grammar
 
-# Remove Left Recursion
+# Remove Direct Left Recursion
 def eliminate_direct_left_recursion(grammar):
     new_grammar = {}
     for each_non_terminal in grammar:
@@ -50,12 +50,35 @@ def eliminate_direct_left_recursion(grammar):
     
     return new_grammar
 
+# Removing Indirect Left Recursion
+def eliminate_indirect_left_recursion(grammar):
+    non_terminals = list(grammar.keys())
+
+    for i in range(len(non_terminals)):
+        ith_non_terminal = non_terminals[i]
+
+        for j in range(i):
+            jth_non_terminal = non_terminals[j]
+            
+            new_productions = []
+            for production in grammar[ith_non_terminal]:
+                if production.startswith(jth_non_terminal):
+                    # Replace jth_non_terminal with its productions
+                    for beta in grammar[jth_non_terminal]:
+                        new_productions.append(beta + production[len(jth_non_terminal):])
+                else:
+                    new_productions.append(production)
+            grammar[ith_non_terminal] = new_productions
+
+        grammar = eliminate_direct_left_recursion(grammar)
+
+    return grammar
+
 # Print Grammar
 def print_grammar(grammar):
     for left in grammar:
         right = " | ".join(grammar[left])
         print(f"{left} -> {right}")
-
 
 
 grammar = read_grammar("grammar.txt")
