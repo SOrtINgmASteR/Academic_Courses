@@ -17,4 +17,4 @@ B -> Ab | Sc | n
 
 A -> Ba | d
 B -> Cb | g
-C -> Ac | F
+C -> Ac | f

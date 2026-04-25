@@ -1,1 +1,1 @@
-A -> Ac | Aad | bd | c
+E -> E+T | T

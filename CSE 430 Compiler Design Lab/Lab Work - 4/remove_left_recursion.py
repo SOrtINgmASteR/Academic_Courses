@@ -86,6 +86,6 @@ print("Original Grammar:")
 print_grammar(grammar)
 # print(grammar)
 
-new_grammar = eliminate_direct_left_recursion(grammar)
+new_grammar = eliminate_indirect_left_recursion(grammar)
 print("\nGrammar after removing Left Recursion:")
 print_grammar(new_grammar)
