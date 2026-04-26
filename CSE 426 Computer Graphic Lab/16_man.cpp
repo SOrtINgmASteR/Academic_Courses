@@ -1,5 +1,4 @@
 //Man
-
 #include<GL/glut.h>
 #include<math.h>
 void draw(int x, int y, int xc, int yc) 
