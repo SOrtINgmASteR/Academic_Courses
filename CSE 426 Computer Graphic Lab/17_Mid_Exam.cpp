@@ -16,8 +16,8 @@ const int WINDOW_WIDTH = 800;
 const int WINDOW_HEIGHT = 600;
 
 const float BORDER_COLOR[3] = {0.0f, 0.0f, 0.0f};
-const float CIRCLE_FILL_COLOR[3] = {0.1f, 0.7f, 0.95f};
-const float TRIANGLE_FILL_COLOR[3] = {0.95f, 0.8f, 0.2f};
+const float CIRCLE_FILL_COLOR[3]   = {1.0f, 0.3f, 0.2f};  
+const float TRIANGLE_FILL_COLOR[3] = {0.2f, 0.2f, 1.0f};   
 
 const PointF TRI_ORIG[3] = {
 	{270.0f, 188.0f},
