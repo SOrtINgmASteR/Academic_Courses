@@ -98,6 +98,7 @@ with open("input.txt", "r") as file:
         print("================================")
         print("Input Expression:")
         print(expression)
+        temp_count = 1 
 
         # Convert infix to postfix
         postfix = infix_to_postfix(expression)
