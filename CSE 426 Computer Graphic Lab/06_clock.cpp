@@ -171,7 +171,7 @@ int main(int argc, char** argv){
     glutDisplayFunc(myDisplay);
     myInit();
 
-    // glutIdleFunc(myIdle);
+    glutIdleFunc(myIdle);
 
     glutMainLoop();
 }
